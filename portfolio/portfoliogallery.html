@@ -2,29 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>NavigationSystem</title>
+    <title>Portfolio Gallery</title>
 </head>
 <body>
-<!-- Navigation System -->
-    <img src="images/logos/austinmullin.jpg" alt="Austin Mullin" title="Yup, that's my name."/>
-    <div class="topnav">
-        <a class="active" href="homepage.html">Home</a>
-        <a href="../idm221/portfolio/portfoliogallery.html">Portfolio</a>
-        <a href="../idm221/about/aboutme.html">About Me</a>
-        <a href="../idm221/about/resume.html">Resume</a>
-    </div>
-<!-- Heading + Buttons -->
-    <h1>Portfolio</h1>
-    <a href="animation">Animation</a>
-    <a href="idm">IDM</a>
-    <a href="photography">Photography</a>
-
-<!-- Animation Gallery -->
-<h2><a id="animation"></a>Animation</h2>
-    <div class="testgallery">
-        <div class="test">
-          <img src="../images/thumbnails/gallery/test/extras.jpg">
-          <img src="../images/thumbnails/gallery/test/scopepie.jpg">
+<!-- Header -->
+    <header>
+        <img src="../images/logos/austinmullin.jpg" alt="Austin Mullin" title="Yup, that's my name."/>
+        <div class="topnav">
+            <a class="active" href="../index.html">Home</a>
+            <a href="../idm221/portfolio/portfoliogallery.html">Portfolio</a>
+            <a href="../idm221/about/aboutme.html">About Me</a>
+            <a href="../idm221/about/resume.html">Resume</a>
         </div>
+    </header>
+
+<!--Navigation Buttons -->
+    <main>
+        <h1>Portfolio</h1>
+        <div class="portfolioanchor">
+            <a href="#animation">Animation</a>
+            <a href="#idm">IDM</a>
+            <a href="#photography">Photography</a>
+        </div>
+<!-- Animation Gallery -->
+    <h2><a id="animation"></a>Animation</h2>
+        <div class="row">
+            <div class="column">
+                <img src="../images/thumbnails/gallery/test/extras.jpg" alt="Extra Content" title="Extra Content">
+            </div>
+            <div class="column">
+                <img src="../images/thumbnails/gallery/test/extras.jpg" alt="Extra Content" title="Extra Content">
+            </div>
+        </div>>
+<!-- IDM Gallery -->
+    <h2><a id="idm"></a>IDM</h2>
+        <div class="row">
+            <div class="column">
+            <img src="../images/thumbnails/gallery/test/scopepie.jpg" alt="Extra Content" title="Extra Cotent">
+        </div>
+    </main>
+<!-- Photography Gallery -->
+    <h2><a id="photography"></a>Photography</h2>
+        <div class="row">
+            <div class="column">
+            <img src="../images/thumbnails/gallery/test/scopepie.jpg" alt="Extra Content" title="Extra Cotent">
+        </div>
+    </main>
 </body>
     
