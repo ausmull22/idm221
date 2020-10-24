@@ -1,14 +1,18 @@
 .nav {
     background-color: lightblue;
+    position: relative;
+    font: arial; 
     color: #ffffff;
     list-style: none;
     text-align: center;
-    padding: 20px @ 20px 0;
+    padding: 20px @ 20px @ 20px @ 20px;
 }
 
 .nav > li {
     display: inline-block;
     padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .nav > li > a {
@@ -19,9 +23,17 @@
 .nav > li > a:hover {
     color: red
 }
-    text
 
-
+h1 {
+    background-color: black;
+    font: arial;
+    color: #ffffff;
+    text-align: left;
+    text-indent: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding: 20px @ 20px @ 20px @ 20px;
+}
 
 body {
     margin: 0;
@@ -29,6 +41,10 @@ body {
     font-family: 'Arial', serif;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
 
 
 .test {
