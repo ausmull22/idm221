@@ -1,5 +1,5 @@
 .nav {
-    background-color: lightblue;
+    background-color: mediumseagreen;
     position: relative;
     font: arial; 
     color: #ffffff;
@@ -15,17 +15,18 @@
     padding-bottom: 20px;
 }
 
-.nav > li > a {
+.nav > li > button {
     text-decoration: none:
     color: #ffffff;
 }
 
-.nav > li > a:hover {
-    color: red
+.nav > li > button:hover {
+    color: lightblue;
+    font-size: 20px
 }
 
 h1 {
-    background-color: black;
+    background-color: darkgrey;
     font: arial;
     color: #ffffff;
     text-align: left;
@@ -36,8 +37,9 @@ h1 {
 }
 
 body {
-    margin: 0;
-    padding 0;
+    margin: 10px @ 10px @ 10px @ 10px;
+    background-color: black;
+    padding: 10px @ 10px @ 10px @ 10px;
     font-family: 'Arial', serif;
 }
 
@@ -46,9 +48,19 @@ img {
     height: auto;
 }
 
+button {
+    background-color: black; 
+    border: none;
+    color:#ffffff;
+    padding: 15px @ 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 23px;
+  }
 
 .test {
-    color: red;
+    color: white;
     font-size: 200%;
 
 }
