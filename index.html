@@ -5,15 +5,16 @@
     <title>HomePage</title>
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="homepage.css" />
 </head>
 <!-- Header -->
 <body>
     <ul class= "nav">
         <li><img src="images/logos/logowhite.png" alt="Austin Mullin" title="Yup, that's my name."/></li>
-        <li><button onclick="index.html">Home</button></li>
-        <li><button href="portfolio/portfoliogallery.html">Portfolio</button></li>
-        <li><button href="about/aboutme.html">About Me</button></li>
-        <li><button href="about/resume.html">Resume</button></li>
+        <li><button onclick="window.location.href='index.html';">Home</button></li>
+        <li><button onclick="window.location.href='portfolio/portfoliogallery.html';">Portfolio</button></li>
+        <li><button onclick="window.location.href='about/aboutme.html';">About Me</button></li>
+        <li><button onclick="window.location.href='about/resume.html';">Resume</button></li>
     </ul>
     <!-- Current Project -->
     <h1 id="project">My Current Project</h1>
@@ -21,7 +22,11 @@
     <p>This is a description of my current project.</p>
 
     <h1>Who am I?</h1>
-    <p class="test">My name is Austin Mullin. I am currently a junior at Drexel University. I am studying Entertainment and Arts Management as my major, while also having a minor in both Business Administration and Animation. I grew up in Ardmore, PA.</p>
-    <p>I hold multiple officer roles for clubs at the Westphal School of Art and Design. I am the treasurer and teaching assistant for the Drexel Animation Group, which holds workshops and presentations enhancing students’ skills in different forms of animation. I am also the content strategist for the Drexel University Extended Reality Club, which has an emphasis on virtual and augmented reality.</p>
-
+    <div class="who">
+        <img src="images/portraits/austincar.jpg" alt="Austin in A Car" title="Austin in a Car"/>
+        <p class="test">My name is Austin Mullin. I am currently a junior at Drexel University. I am studying Entertainment and Arts Management as my major, while also having a minor in both Business Administration and Animation. I grew up in Ardmore, PA.</p>
+        <p class="test">I hold multiple officer roles for clubs at the Westphal School of Art and Design. I am the treasurer and teaching assistant for the Drexel Animation Group, which holds workshops and presentations enhancing students’ skills in different forms of animation. I am also the content strategist for the Drexel University Extended Reality Club, which has an emphasis on virtual and augmented reality.</p>
+        <button class="test" onclick="window.location.href='about/resume.html';">Explore my Resume</button>
+        <button class="test" onclick="window.location.href='about/aboutme.html';">Learn more about my beginnings.</button>
+    </div>
 </body>

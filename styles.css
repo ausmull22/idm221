@@ -18,6 +18,7 @@
 .nav > li > button {
     text-decoration: none:
     color: #ffffff;
+    : 50px;
 }
 
 .nav > li > button:hover {
@@ -46,6 +47,7 @@ body {
 img {
     width: 100%;
     height: auto;
+    border-radius: 01%;
 }
 
 button {
@@ -58,12 +60,6 @@ button {
     display: inline-block;
     font-size: 23px;
   }
-
-.test {
-    color: white;
-    font-size: 200%;
-
-}
 
 #project {
     color: pink
