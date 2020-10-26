@@ -1,3 +1,4 @@
+/*! Navigation */
 .nav {
     background-color: mediumseagreen;
     position: relative;
@@ -18,13 +19,40 @@
 .nav > li > button {
     text-decoration: none:
     color: #ffffff;
-    : 50px;
+    font-size: 20px;
 }
 
 .nav > li > button:hover {
     color: lightblue;
     font-size: 20px
 }
+
+/*! Footer */
+
+.foot {
+    background-color: mediumseagreen;
+    position: relative;
+    font: arial; 
+    color: #ffffff;
+    list-style: none;
+    text-align: center;
+    margin: 20px @ 20px @ 20px @ 20px;
+}
+
+.foot > ul {
+    display: inline-block;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.foot > ul > li > a {
+    text-decoration: none:
+    color: #ffffff;
+    font-size: 20px;
+}
+
+/*! h1 */
 
 h1 {
     background-color: darkgrey;
@@ -47,7 +75,6 @@ body {
 img {
     width: 100%;
     height: auto;
-    border-radius: 01%;
 }
 
 button {
