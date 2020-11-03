@@ -13,17 +13,19 @@
 
 
 /*! Navigation */
-.nav {
+nav {
     overflow: hidden;
+    float: right;
+}
+
+#logo {
+    width: fit-content;
+    float: left;
 }
 
 
-
-.nav > img {
-    width: auto;
-    align-items: left;
-}
-.nav > a {
+nav > ul > li {
+    display: inline-block;
     font-family: RalewayRegular;
     padding: 10px;
     text-decoration: none;
@@ -40,8 +42,7 @@
 
 @media screen and (max-width: 900px) {
     .nav {
-        border: 5px solid white;
-
+        float: center;
     }
 }
 
@@ -51,10 +52,7 @@
     }
 }
 
-.logo {
-    width: 50px;
-    align-self: center;
-}
+
 
 /*! Footer */
 
