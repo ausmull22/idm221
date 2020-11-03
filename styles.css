@@ -1,7 +1,20 @@
+/*! Font */
+
+@font-face {
+    font-family: 'RalewayRegular';
+    src: url('fonts/Raleway-Regular.ttf'); format('tff');
+}
+
+
+@font-face {
+    font-family: 'RalewayThin';
+    src: url('fonts/Raleway-Thin.ttf'); format('tff');
+}
+
+
 /*! Navigation */
 .nav {
     overflow: hidden;
-    background-color:mediumseagreen;
 }
 
 
@@ -11,6 +24,7 @@
     align-items: left;
 }
 .nav > a {
+    font-family: RalewayRegular;
     padding: 10px;
     text-decoration: none;
     color: #ffffff;
@@ -35,6 +49,11 @@
     .column {
         width: 90%;
     }
+}
+
+.logo {
+    width: 50px;
+    align-self: center;
 }
 
 /*! Footer */
@@ -65,8 +84,7 @@
 /*! h1 */
 
 h1 {
-    background-color: darkgrey;
-    font: arial;
+    font-family: RalewayRegular;
     color: #ffffff;
     text-align: left;
     text-indent: 10px;

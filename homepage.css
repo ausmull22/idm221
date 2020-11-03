@@ -10,8 +10,7 @@
 }
 
 button.test {
-    align-items: center;
-    background-color: #4CAF50; /* Green */
+    align-items: center;    
     border: none;
     color: white;
     padding: 15px 32px;
@@ -51,16 +50,20 @@ button.test {
 
 .content > h3 {
     font-size: 30px;
+    font-family: RalewayThin;
     color: white;
     margin-top: 5px;
     margin: 10px;
-    text-shadow: darkgrey;
 }
 
 .content > p {
     color: white;
     padding-left: 10px;
 }
+
+/*! Gallery on Homepage */
+
+
 
 
 
