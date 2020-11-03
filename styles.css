@@ -1,3 +1,11 @@
+/*! Dividers */
+
+hr.dashed {
+    border-top: 3px dashed #bbb;
+    display: inline block;
+  }
+
+
 /*! Font */
 
 @font-face {
@@ -32,6 +40,10 @@ ul li a {
     text-decoration: none;
     color: #ffffff;
     font-size: 30px;
+}
+
+p {
+    font-family: RalewayRegular;
 }
 
 nav > ul > li:hover {
@@ -71,6 +83,12 @@ h1 {
     color: #ffffff;
 }
 
+.who h1 {
+    text-align: center;
+    font-family: RalewayRegular;
+    color: black;
+}
+
 body {
     margin: 10px @ 10px @ 10px @ 10px;
     background-color: black;
@@ -95,19 +113,43 @@ button {
   }
 
 
+.who {
+    display: inline-block;
+    background-color: white;
+}
+
+.who p {
+    text-align: center;
+}
+
+img.portrait {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
 /*! Gallery on Homepage */
 
 div.gallery {
-    width: 700px;
+    float: left;
+    width: 500px;
     background-color: darkgrey;
 }
 
-div.gallery img {
+/*! Containers */
+
+.container {
+    height: 200px;
+    position: relative;
 }
 
-.content > img {
-
+.center {
+    margin: 0;
+    position: absolute;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }
-
-/*! Gallery on Homepage */
-
