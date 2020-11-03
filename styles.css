@@ -22,10 +22,8 @@ nav {
     float: left;
 }
 
-
 ul li a {
     display: inline-block;
-
 }
 
 ul li a {
@@ -40,8 +38,6 @@ nav > ul > li:hover {
     color: lightblue;
     background-color: black;
 }
-
-
 
 /*! Footer */
 
@@ -101,43 +97,16 @@ button {
 
 /*! Gallery on Homepage */
 
-.row {
-    margin: 0px;
-}
-
-.column {
-    size: 30%;
+div.gallery {
+    width: 700px;
     background-color: darkgrey;
-    display: inline-block;
-    border: 7px solid white;
-    float: center;
-
 }
 
-.column:hover {
-    background-color: teal;
-}
-
-.content {
-    padding: 0px;
-    margin-bottom: 5px;
-}
-
-.content > h3 {
-    font-size: 30px;
-    font-family: RalewayThin;
-    color: white;
-    margin-top: 5px;
-    margin: 10px;
-}
-
-.content > p {
-    color: white;
-    padding-left: 10px;
+div.gallery img {
 }
 
 .content > img {
-    width: 50%;
+
 }
 
 /*! Gallery on Homepage */
