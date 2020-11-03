@@ -23,6 +23,7 @@ hr.dashed {
 /*! Navigation */
 nav {
     float: right;
+    display: inline-block;
 }
 
 #logo {
@@ -30,8 +31,15 @@ nav {
     float: left;
 }
 
-ul li a {
-    display: inline-block;
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    float: left;
 }
 
 ul li a {
@@ -40,6 +48,8 @@ ul li a {
     text-decoration: none;
     color: #ffffff;
     font-size: 30px;
+    display: block;
+    float: right;
 }
 
 p {
@@ -53,7 +63,7 @@ nav > ul > li:hover {
 
 /*! Footer */
 
-.foot {
+footer {
     background-color: mediumseagreen;
     position: relative;
     font: arial; 
@@ -80,6 +90,7 @@ nav > ul > li:hover {
 
 h1 {
     font-family: RalewayRegular;
+    float: left;
     color: #ffffff;
 }
 
@@ -139,6 +150,12 @@ div.gallery {
 }
 
 /*! Containers */
+
+.separators {
+    height: 75px;
+    position: relative;
+}
+
 
 .container {
     height: 200px;
