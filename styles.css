@@ -14,7 +14,6 @@
 
 /*! Navigation */
 nav {
-    overflow: hidden;
     float: right;
 }
 
@@ -24,24 +23,27 @@ nav {
 }
 
 
-nav > ul > li {
+ul li a {
     display: inline-block;
+
+}
+
+ul li a {
     font-family: RalewayRegular;
     padding: 10px;
     text-decoration: none;
     color: #ffffff;
     font-size: 30px;
-    padding-bottom: 10px;
 }
 
-.nav > a:hover {
+nav > ul > li:hover {
     color: lightblue;
     background-color: black;
 }
 
 
 @media screen and (max-width: 900px) {
-    .nav {
+    nav {
         float: center;
     }
 }
@@ -51,7 +53,6 @@ nav > ul > li {
         width: 90%;
     }
 }
-
 
 
 /*! Footer */
@@ -84,11 +85,6 @@ nav > ul > li {
 h1 {
     font-family: RalewayRegular;
     color: #ffffff;
-    text-align: left;
-    text-indent: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding: 20px @ 20px @ 20px @ 20px;
 }
 
 body {
@@ -114,9 +110,83 @@ button {
     font-size: 23px;
   }
 
-#project {
-    color: pink
-    font-size: 300%;
+
+/*! TAKEN FROM hompage.css */
+
+.who{
+    column-count: 2;
+    display: inline-block;
+}
+
+.test {
+    color: white;
+    font-size: 150%;
 
 }
 
+button.test {
+    align-items: center;    
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/*! Gallery on Homepage */
+
+.row {
+    margin: 0px;
+}
+
+
+.column {
+    width: auto;
+    max-width: 23%;
+    background-color: darkgrey;
+    display: inline-block;
+    border: 7px solid white;
+}
+
+.column:hover {
+    background-color: teal;
+}
+
+.content {
+    padding: 0px;
+    margin-bottom: 5px;
+}
+
+
+/*! Gallery on Homepage */
+
+
+.content > h3 {
+    font-size: 30px;
+    font-family: RalewayThin;
+    color: white;
+    margin-top: 5px;
+    margin: 10px;
+}
+
+.content > p {
+    color: white;
+    padding-left: 10px;
+}
+
+/*! Gallery on Homepage */
+
+@media screen and (max-width: 900px) {
+    .column {
+        width: 70%;
+        border: 5px solid white;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 90%;
+    }
+}
