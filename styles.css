@@ -5,7 +5,9 @@ hr.dashed {
     display: inline block;
   }
 
-
+.container {
+    clear:both;
+}
 /*! Font */
 
 @font-face {
@@ -22,7 +24,7 @@ hr.dashed {
 
 /*! Navigation */
 nav {
-    float: right;
+    float: center;
     display: inline-block;
 }
 
@@ -89,16 +91,12 @@ footer {
 /*! h1 */
 
 h1 {
+    display: block;
     font-family: RalewayRegular;
     float: left;
     color: #ffffff;
 }
 
-.who h1 {
-    text-align: center;
-    font-family: RalewayRegular;
-    color: black;
-}
 
 body {
     margin: 10px @ 10px @ 10px @ 10px;
@@ -121,7 +119,7 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 23px;
-  }
+}
 
 
 .who {
@@ -133,7 +131,15 @@ button {
     text-align: center;
 }
 
+.who h1 {
+    display: block;
+    text-align: center;
+    font-family: RalewayRegular;
+    color: black;
+}
+
 img.portrait {
+    clear: both;
     width: 200px;
     display: block;
     margin-left: auto;
@@ -144,8 +150,9 @@ img.portrait {
 /*! Gallery on Homepage */
 
 div.gallery {
+    margin: 5px;
     float: left;
-    width: 500px;
+    width: 400px;
     background-color: darkgrey;
 }
 
