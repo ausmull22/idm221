@@ -24,20 +24,22 @@ hr.dashed {
 
 /*! Navigation */
 nav {
+    margin: 0 auto;
     float: center;
     display: inline-block;
 }
 
 #logo {
-    width: fit-content;
-    float: left;
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
 }
 
-ul {
-    list-style-type: none;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
+nav ul {
+    text-align: center;
+    margin: 10px auto;
+    display: inline-block
 }
 
 ul li {
@@ -51,7 +53,6 @@ ul li a {
     color: #ffffff;
     font-size: 30px;
     display: block;
-    float: right;
 }
 
 p {
@@ -93,7 +94,6 @@ footer {
 h1 {
     display: block;
     font-family: RalewayRegular;
-    float: left;
     color: #ffffff;
 }
 
@@ -111,15 +111,17 @@ img {
 }
 
 button {
-    background-color: black; 
-    border: none;
-    color:#ffffff;
-    padding: 15px @ 32px;
+    border: 5px solid black;
+    border-radius: 40px;
+    color: black;
+    padding: 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 23px;
 }
+
+/*Who Am I Page*/
 
 
 .who {
@@ -132,6 +134,7 @@ button {
 }
 
 .who h1 {
+    float: center;
     display: block;
     text-align: center;
     font-family: RalewayRegular;
@@ -145,14 +148,28 @@ img.portrait {
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
+    box-shadow: 10px 10px 5px black;
+}
+
+
+div.group {
+    padding: 10px;
 }
 
 /*! Gallery on Homepage */
 
+.gallerycenter {
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
 div.gallery {
-    margin: 5px;
+    margin: 10px;
     float: left;
     width: 400px;
+    justify-content: center;
     background-color: darkgrey;
 }
 
