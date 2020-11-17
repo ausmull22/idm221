@@ -21,36 +21,42 @@ hr.dashed {
 }
 
 /*! Navigation */
-nav {
-    margin: 0 auto;
-    float: center;
-    display: inline-block;
-}
 
 #logo {
     width: 90%;
-    margin: 10px auto;
+    margin: 0px auto;
     display: flex;
     justify-content: center;
 }
 
-nav ul {
-    display: inline-block
+nav {
+    margin: 0 auto;
+    float: center;
+    text-align: center;
+    list-style: inside;
 }
 
-ul li {
+nav ul {
+    display: inline-block;
+}
+
+nav ul li {
+    list-style-type: none;
     float: left;
     
 }
 
-ul li a {
+nav ul li a {
     font-family: RalewayRegular;
     padding: 10px;
+    margin: 0 30px;
     text-decoration: none;
     color: #ffffff;
     font-size: 30px;
-    text-align: center;
     display: block;
+    border: 1px solid white;
+    border-radius: 50px;
+
 }
 
 p {
@@ -62,6 +68,7 @@ nav > ul > li:hover {
     background-color: black;
 }
 
+
 /*! Footer */
 
 footer {
@@ -71,20 +78,28 @@ footer {
     color: #ffffff;
     list-style: none;
     text-align: center;
-    margin: 20px;
 }
 
 .foot > ul {
-    display: inline-block;
-    padding-right: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    
 }
 
+ul.socialmedia > li {
+    width: 20%;
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+    display: inline-block;
+}
+
+
+
 .foot > ul > li > a {
+    
     text-decoration: none;
     color: #ffffff;
     font-size: 20px;
+    
 }
 
 /*! h1 */
@@ -98,7 +113,7 @@ h1 {
 
 body {
     margin: 30px;
-    background-color: black;
+    background-color: #343434;
     font-family: 'Arial', serif;
 }
 
@@ -112,7 +127,7 @@ button {
     border: 5px solid black;
     border-radius: 40px;
     color: black;
-    padding: 15px;
+    padding: 10px;
     background-color: white;
     text-align: center;
     text-decoration: none;
@@ -120,10 +135,13 @@ button {
     font-size: 23px;
 }
 
+
+
 /*Who Am I Page*/
 
 
 .who {
+    box-sizing: border-box;
     display: inline-block;
     background-color: white;
 }
@@ -147,7 +165,7 @@ img.portrait {
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
-    box-shadow: 10px 10px 5px black;
+    box-shadow: 5px 5px 5px black;
 }
 
 div.group {
@@ -158,8 +176,7 @@ div.group {
 /*! Featured on Homepage */
 
 div.project img {
-    border-radius: 5%;
-    width: 90%;
+    border-radius: 10px;
     object-fit: scale-down;
 }
 
@@ -167,6 +184,7 @@ div.project img {
 /*! Gallery on Homepage */
 
 .gallerycenter {
+    display: inline-block;
     margin: 0 auto;
     text-align: center;
 }
@@ -174,12 +192,14 @@ div.project img {
 div.gallery {
     margin: 10px;
     float: left;
-    max-width: 400px;
-    width: auto;
+    box-shadow: 5px 5px 5px black;
+    max-width: 440px;
     display: block;
     justify-content: center;
     border-radius: 10px;
 }
+
+/*! Gallery on Tages (Applications Used for Portfolio) */
 
 #maya {
     background-color: rgb(0,187,255);
@@ -189,31 +209,100 @@ div.gallery {
     background-color: rgb(255,168,0);
 }
 
+#adobexd {
+    background-color: purple;
+}
+
 
 div.gallery img {
     border-radius: 10px 10px 0px 0px;
 }
 
 div.date {
+    color: white;
+    font-size: 24px;
     margin: 5px 10px;
     text-align: left;
     font-family: RalewayRegular;
 }
 
 div.description {
+    color: white;
+    font-size: 24px;
     margin: 5px 10px;
     text-align: left;
     font-family: RalewayRegular;
 }
 
-/*! Gallery on Portfolio */
+/*! Portfolio Gallery Navigation */
 
-h2 {
-    margin: 10px;
-    padding: 10px 0;
-    background-color: red;
+div.portfolioanchor {
     display: inline;
 }
+
+
+div.portfolioanchor ul li a {
+    font-family: RalewayRegular;
+    padding: 10px;
+    margin: 0 30px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 30px;
+    display: block;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+
+/*! Gallery on Portfolio */
+
+h1.portfolio {
+    text-transform: uppercase;
+    font-size: 100px;
+    letter-spacing: 40px;
+    text-align: center;
+}
+
+h2 {
+    font-family: RalewayRegular;
+    font-size: 50px;
+    margin: 10px;
+    padding: 10px 0;
+    color: white;
+    display: inline-block;
+}
+
+/*! Portfolio Anchor*/
+
+div.portfolioanchor {
+    margin: 0 auto;
+    float: center;
+    text-align: left;
+    list-style: inside;
+
+}
+
+div.portfolioanchor ul {
+    display: block;
+    text-align: left;
+}
+
+div.portfolioanchor ul li {
+    list-style-type: none;
+    margin: 10px;
+    text-decoration: none;
+}
+    
+div.portfolioanchor ul li a {
+    font-family: RalewayRegular;
+    padding: 10px;
+    color: black;
+    background-color: white;
+    font-size: 30px;
+    display: block;
+
+}
+
 
 /*! Containers */
 
@@ -236,3 +325,21 @@ h2 {
     top: 50%;
     left: 50%;
 }
+
+/*Lines */
+
+#linebothside {
+    text-align: left;
+    display: block;
+    grid-template-columns: 2fr auto 2fr;
+    grid-template-rows: 20px 0;
+    grid-gap: 20px;    
+}
+
+h2#linebothside:after {
+    content: " ";
+    display: block;
+    border-bottom: 3px solid #ffffff;
+}
+
+
