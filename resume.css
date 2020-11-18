@@ -1,0 +1,53 @@
+dl {
+    font-size: 2rem;
+}
+
+dd {
+    font-size: 2rem;
+}
+
+li {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+.resumesection {
+    display: flex;
+    
+}
+
+.resumesection img {
+    width: 10%;
+}
+
+h2 {
+    color: white;
+}
+
+.section {
+    padding: 10px;
+    background-color: white;
+}
+
+#education {
+    background-color: aqua;
+}
+
+#skills {
+    background-color: green;
+}
+
+#technicalskills {
+    background-color: red;
+}
+
+#relevantcoursework {
+    background-color: yellow;
+}
+
+#relevantexperience {
+    background-color: orange;
+}

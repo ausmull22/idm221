@@ -3,28 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Resume</title>
+    <link rel="stylesheet" href="../normalize.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../resume.css"
 </head>
 <!-- Header -->
 <header>
-    <img src="../images/logos/austinmullin.jpg" alt="Austin Mullin" title="Yup, that's my name."/>
-    <div class="topnav">
-        <a class="active" href="../index.html">Home</a>
-        <a href="../idm221/portfolio/portfoliogallery.html">Portfolio</a>
-        <a href="aboutme.html">About Me</a>
-        <a href="resume.html">Resume</a>
+    <!-- Navigation System -->
+    <div class="container">
+        <div>
+            <img id = "logo" src="images/logos/logowhite.png" alt="Austin Mullin" title="Yup, that's my name."/>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio/portfoliogallery.html">Portfolio</a></li>
+                <li><a href="about/aboutme.html">About Me</a></li>
+                <li><a href="about/resume.html">Resume</a></li>
+            </ul>
+        </nav>
+        </div>
     </div>
 </header>
 <body>
     <h1>Austin Mullin</h1>
 
-    <h2>Education</h2>
+    <div id="education" class= "resumesection">
+        <img src="../images/resume/education.png" alt="education" title="education"/>
+        <h2>Education</h2>
+    </div>
+    <div class="section">
         <p>Drexel Unviersity - Philadelphia, PA</p>
         <p><i>Bachelor of Science</i></p>
         <p>Entertainment and Arts Management</p>
         <p>Cumulative GPA: 3.66</p>
-        <p>Anticipated Graduation: Jume 2022</p>
+        <p>Anticipated Graduation: June 2022</p>
+    </div>
     
-    <h2>Skills</h2>
+    <div id="skills" class= "resumesection">
+        <img src="../images/resume/education.png" alt="education" title="education"/>
+        <h2>Skills</h2>
+    </div>
+    <div class="section">
         <ul>
             <li>Time-Management</li>
             <li>Social Media Communication</li>
@@ -34,8 +54,12 @@
             <li>Teamwork Skills</li>
             <li>Problem Solving</li>
         </ul>
-
-     <h2>Technical Skills</h2>
+    </div>
+    <div id="skills" class="resumesection">
+        <img src="../images/resume/education.png" alt="education" title="education"/>
+        <h2>Technical Skills</h2>
+    </div>
+    <div class="section">
         <ul>
             <li>Microsoft Office</li>
             <li>Adobe Premiere</li>
@@ -45,8 +69,12 @@
             <li>WordPress</li>
             <li>Python3</li>
         </ul>
-
-    <h2>Relevent Course Work</h2>
+    </div>
+    <div id="relevantcoursework" class="resumesection">
+        <img src="../images/resume/education.png" alt="education" title="education"/>
+        <h2>Relevent Course Work</h2>
+    </div>
+    <div class="section">
         <ul>
             <li>Techniques of Speaking</li>
             <li>Principles of Communication</li>
@@ -55,17 +83,21 @@
             <li>Intro to Web Development</li>
             <li>Basic Cinematography</li>
         </ul>
-
-    <h2>Relevant Experience</h2>
+    </div>
+    <div id="relevantexperience" class="resumesection">
+        <img src="../images/resume/education.png" alt="education" title="education"/>
+        <h2>Relevant Experience</h2>
+    </div>
+    <div class="section">
         <dl>Drexel Animation Club</dl>
-        <dd>Taught features in Adobe Animate, and Autodesk Maya to 20+ college Freshmen and Sophomores through self-built exercises</dd>
-        <dd>Responsible for handling events on social media sites, including posting announcements for upcoming meetings and events.</dl>
+            <li>Taught features in Adobe Animate, and Autodesk Maya to 20+ college Freshmen and Sophomores through self-built exercises</dd>
+            <li>Responsible for handling events on social media sites, including posting announcements for upcoming meetings and events.</dl>
         <dl>Halfpenny Management</dl>
-        <dd>Redesigned website, allowing users to have an easier experience exploring different real-estate properties </dd>
-        <dd>Responsible for disposing confidential documents that no longer serve purpose to the company.</dd>
+            <li>Redesigned website, allowing users to have an easier experience exploring different real-estate properties </dd>
+            <dd>Responsible for disposing confidential documents that no longer serve purpose to the company.</dd>
         <dl>Old Pine Street Church Volunteer</dl>
-        <dd>Prepared dishes in soup-kitchen for senior citizens in a team effort</dd>
-        <dd>Organized Bingo Events that consisted of 40+ senior citizens</dd>
-        
+            <li>Prepared dishes in soup-kitchen for senior citizens in a team effort</dd>
+            <li>Organized Bingo Events that consisted of 40+ senior citizens</dd>
+    </div>  
 
 </body>
