@@ -315,7 +315,7 @@ div.portfolioanchor ul li a {
 
 /*Lines */
 
-#linebothside {
+.linebothside {
     text-align: left;
     display: block;
     grid-template-columns: 2fr auto 2fr;
@@ -323,7 +323,7 @@ div.portfolioanchor ul li a {
     grid-gap: 20px;    
 }
 
-h2#linebothside:after {
+.linebothside:after {
     content: " ";
     display: block;
     border-bottom: 3px solid #ffffff;
