@@ -312,13 +312,19 @@ div.portfolioanchor ul li a {
     position: relative;
 }
 
+
+.buttoncontainer {
+    margin: auto 0;
+    height: 200px;
+    position: relative;
+}
+
 .center {
-    margin: 0;
-    position: absolute;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
+    display: inline-block;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+    left: 25%;
 }
 
 /*Lines */
