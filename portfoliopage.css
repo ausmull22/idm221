@@ -11,7 +11,7 @@
 .title h3 {
     position: relative;
     top: -3rem;
-    font-size: 32px;
+    font: 32px, RalewayRegular;
     color: white;
     padding: 10px;
 }

@@ -10,22 +10,23 @@ header {
 
 hr.dashed {
     border-top: 3px dashed #bbb;
-    display: inline block;
+    display: inline-block;
   }
 
 .container {
     clear:both;
 }
+
 /*! Font */
 
 @font-face {
-    font-family: 'RalewayRegular';
-    src: url('fonts/Raleway-Regular.ttf'); format('tff');
+    font-family: "RalewayRegular";
+    src: url('fonts/Raleway-Regular.ttf') format("tff");
 }
 
 @font-face {
-    font-family: 'RalewayThin';
-    src: url('fonts/Raleway-Thin.ttf'); format('tff');
+    font-family: "RalewayThin";
+    src: url('fonts/Raleway-Thin.ttf') format("tff");
 }
 
 /*! Navigation */
@@ -39,7 +40,6 @@ hr.dashed {
 
 nav {
     margin: 0 auto;
-    float: center;
     text-align: center;
     list-style: inside;
 }
@@ -55,7 +55,7 @@ nav ul li {
 }
 
 nav ul li a {
-    font-family: RalewayRegular;
+    font: 1rem, RalewayRegular;
     padding: 10px;
     margin: 0 30px;
     text-decoration: none;
@@ -68,7 +68,7 @@ nav ul li a {
 }
 
 p {
-    font-family: RalewayRegular;
+    font: 1rem, RalewayRegular;
 }
 
 nav > ul > li:hover {
@@ -82,25 +82,20 @@ nav > ul > li:hover {
 footer {
     background-color: mediumseagreen;
     position: relative;
-    font: arial; 
+    font: 1rem, arial; 
     color: #ffffff;
     list-style: none;
     text-align: center;
 }
 
-.foot > ul {
-    
-}
 
-ul.socialmedia > li {
+.socialmedia > a {
     width: 20%;
     margin: 10px;
     padding: 10px;
     list-style-type: none;
     display: inline-block;
 }
-
-
 
 .foot > ul > li > a {
     text-decoration: none;
@@ -115,7 +110,7 @@ h1 {
     font-size: 3rem;
     text-align: center;
     display: block;
-    font-family: RalewayRegular;
+    font: 2rem, RalewayRegular;
     color: #ffffff;
 }
 
@@ -144,7 +139,6 @@ button {
 }
 
 
-
 /*Who Am I Page*/
 
 
@@ -155,16 +149,16 @@ button {
 }
 
 .who p {
+    font: 2rem, Arial;
     text-align: center;
     font-size: 2rem;
 }
 
 .who h1 {
-    float: center;
-    display: block;
+    display: inline-block;
     text-align: center;
-    size: 2rem;
-    font-family: RalewayRegular;
+    margin: auto 0;
+    font: 2rem, RalewayRegular;
     color: black;
 }
 
@@ -206,19 +200,15 @@ div.gallery {
 div.gallery img {
     width: fit-content;
     max-width: 450px;
+}
 
 /*! Gallery on Tages (Applications Used for Portfolio) */
 
-
-}
-
-
 div.date {
     color: white;
-    font-size: 24px;
     margin: 5px 10px;
     text-align: left;
-    font-family: RalewayRegular;
+    font: 2rem, RalewayRegular;
 }
 
 div.description {
@@ -226,7 +216,7 @@ div.description {
     font-size: 24px;
     margin: 5px 10px;
     text-align: left;
-    font-family: RalewayRegular;
+    font: 2rem, RalewayRegular;
 }
 
 /*! Portfolio Gallery Navigation */
@@ -237,12 +227,11 @@ div.portfolioanchor {
 
 
 div.portfolioanchor ul li a {
-    font-family: RalewayRegular;
+    font: 30px, RalewayRegular;
     padding: 10px;
     margin: 0 30px;
     text-decoration: none;
     color: #ffffff;
-    font-size: 30px;
     display: block;
     border: 1px solid white;
     border-radius: 50px;
@@ -253,13 +242,13 @@ div.portfolioanchor ul li a {
 
 h1.portfolio {
     text-transform: uppercase;
-    font-size: 100px;
+    font: 100px, RalewayRegular;
     letter-spacing: 40px;
     text-align: center;
 }
 
 h2 {
-    font-family: RalewayRegular;
+    font: 3rem, RalewayRegular;
     font-size: 50px;
     margin: 10px;
     padding: 10px 0;
@@ -271,7 +260,6 @@ h2 {
 
 div.portfolioanchor {
     margin: 0 auto;
-    float: center;
     text-align: left;
     list-style: inside;
 
@@ -292,10 +280,8 @@ div.portfolioanchor ul li a {
     font-family: RalewayRegular;
     padding: 10px;
     color: black;
-    background-color: white;
     font-size: 30px;
     display: block;
-
 }
 
 
