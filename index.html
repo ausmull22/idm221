@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>HomePage</title>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="stripes.css" />
 </head>
 <!-- Header -->
+<body>
 <header>
     <!-- Navigation System -->
     <div class="container">
@@ -22,10 +23,8 @@
                 <li><a href="about/resume.html">Resume</a></li>
             </ul>
         </nav>
-        </div>
     </div>
 </header>
-<body>
     <!-- Recent Project -->
     <div class="project">
         <h1>My Recent Project</h1>
@@ -35,7 +34,7 @@
     <!-- Featured Projects-->
         <h1>Featured Projects</h1>
     <div class="gallerycenter">
-        <div id="maya" class= "gallery">
+        <div class= "gallery">
             <a target="_blank" href="/portfolio/portfoliogallery.html">
                 <img src="images/thumbnails/Halfpenny.png" alt="Halfpenny">
             </a>
@@ -43,7 +42,7 @@
             <div class= "date">January 4th 2000</div>
         </div>
 
-        <div id ="dslr" class= "gallery">
+        <div class= "gallery">
             <a target="_blank" href="/portfolio/portfoliogallery.html">
                 <img src="images/thumbnails/investigator.jpg" alt="Halfpenny">
             </a>
@@ -51,7 +50,7 @@
             <div class= "date">January 4th 2000</div>
         </div>
 
-        <div id="maya" class= "gallery">
+        <div class= "gallery">
             <a target="_blank" href="/portfolio/portfoliogallery.html">
                 <img src="images/thumbnails/sunny.jpg" alt="Halfpenny">
             </a>
@@ -59,7 +58,7 @@
             <div class= "date">January 4th 2000</div>
         </div>
 
-        <div id="maya" class= "gallery">
+        <div class= "gallery">
             <a target="_blank" href="/portfolio/portfoliogallery.html">
                 <img src="images/thumbnails/pen.jpg" alt="Halfpenny">
             </a>
@@ -67,7 +66,6 @@
             <div class= "date">January 4th 2000</div>
         </div>  
     </div>
-
    <!-- Who Am I Section-->
     <div class="who">
         <h1>Who am I?</h1>
@@ -78,22 +76,19 @@
             <div class= "buttoncontainer">   
                 <button class= "center" onclick="window.location.href='about/resume.html';">Explore My Resume</button>
                 <button class= "center" onclick="window.location.href='about/aboutme.html';">More About Me</button>
-                </div>
             </div>
         </div>
     </div>
 <!-- Footer -->
-</body>
 <footer>
-    <div class = "left-column">
-        <ul class = "socialmedia">
-            <li><img href="https://www.linkedin.com/in/austinmullin/" src="images/socialmedia/500px.png"></img></li>
-            <li><img href="https://500px.com/p/ausmullin?view=photos" src="images/socialmedia/linkedin.png"></img></li>
-            <li><img href="https://medium.com/@amullin" src="images/socialmedia/medium.png"></img></li>
-        </ul>
-        <ul class = "contact">
-            <li>Phone Number: 610-420-9702</li>
-            <li>E-Mail: ahm85@drexel.edu</li>
-        </ul>
+    <div class = "socialmedia">
+        <a href="https://www.linkedin.com/in/austinmullin/"><img src="images/socialmedia/500px.png" alt="500px"></a>
+        <a href="https://500px.com/p/ausmullin?view=photos"><img src="images/socialmedia/linkedin.png" alt="linkedin"></a>
+        <a href="https://medium.com/@amullin"><img  src="images/socialmedia/medium.png" alt="medium"></a>
+    </div>
+    <div class = "contact">
+        <a>Phone Number: 610-420-9702</a>
+        <a>E-Mail: ahm85@drexel.edu</a>
     </div>   
 </footer>
+</body>
