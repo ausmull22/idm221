@@ -41,9 +41,28 @@
 }
 
 
-.appgallery {
+.applicationsused {
+    box-sizing: border-box;
     width: auto;
+    background-color: white;
+}
+
+.applicationsused > h1 {
+     display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    object-fit: fill;
+    font-family: RalewayRegular;
+    color: black;
+}
+
+
+.appgallery {
+    white-space: pre-line;
+    overflow: auto;
     display: flex;
+    clear: both;
     margin: 0 auto;
     text-align: center;
 
@@ -52,10 +71,13 @@
 div.app {
     width: auto;
     padding: 10px;
-    margin: 0 auto;
+    margin: 10px auto;
     float: left;
     padding: 10px;
     max-width: 200px;
-    display: block;
     justify-content: center;
+}
+
+div.app img {
+    width: 50%;
 }
