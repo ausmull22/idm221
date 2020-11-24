@@ -1,6 +1,7 @@
+
+
 /*! Header */
 header {
-    box-sizing: border-box;
     display: block;
     padding: 10px;
     background-color: black;
@@ -206,6 +207,7 @@ div.project p {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: minmax(100px, auto);
+    width: auto;
 }
 
 div.gallery {
@@ -220,9 +222,10 @@ div.gallery img {
 
 div.date {
     color: white;
+    padding: 5px;
     margin: 5px 10px;
     text-align: left;
-    font-size: 30px;
+    font-size: 24px;
     font-family: RalewayRegular;
 }
 
@@ -230,6 +233,7 @@ div.featdescription {
     color: white;
     font-size: 30px;
     margin: 5px 10px;
+    padding: 5px;
     text-align: left;
     font-family: RalewayRegular;
 }

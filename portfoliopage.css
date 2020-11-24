@@ -1,17 +1,30 @@
+
+.bg-image {
+    background-image: url(../images/portraits/austinfullbody.jpg);
+    filter: blur(10px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .title {
-    background-color: black;
+    margin-top: 10px;
 }
 
 .title h1 {
-    margin: 0 10px;
-    display: inline;
+    position: relative;
+    text-align: center;
+    top: 10px;
+    margin: 10px;
+    display: block;
     color: white;
 }
 
 .title h3 {
+    text-align: center;
     position: relative;
-    top: -3rem;
-    font: 32px, RalewayRegular;
+    font-size: 1.50rem;
     color: white;
     padding: 10px;
 }
@@ -33,11 +46,20 @@
 }
 
 .description {
-    background-color: white;
+    background-image: url(/images/portraits/austinfullbody.jpg);
+    filter: blur(10px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.description p {
-    color: black;
+.piecedescription p {
+    text-align: center;
+    color:white;
+    font-family: RalewayRegular;
+    padding: 3rem;
+    font-size: 2.25rem;
 }
 
 
@@ -48,7 +70,7 @@
 }
 
 .applicationsused > h1 {
-     display: block;
+    display: block;
     text-align: center;
     padding: 10px;
     margin: 0 auto;
@@ -65,7 +87,6 @@
     clear: both;
     margin: 0 auto;
     text-align: center;
-
 }
 
 div.app {
@@ -78,8 +99,13 @@ div.app {
     justify-content: center;
 }
 
+
+.application {
+    font-size: 2rem;
+}
+
 div.app img {
-    width: 50%;
+    width: 45%;
 }
 
 div.return {
@@ -89,8 +115,17 @@ div.return {
 div.return a {
     font-size: 3rem;
     margin: 10px;
+    font-family: RalewayRegular;
     padding: 10px;
     display: inline-block;
     color: white;
     text-decoration: none;
+}
+
+div.return img {
+    position: relative;
+    top: 25px;
+    right: 10px;
+    float: right;
+    width: 60px;
 }
