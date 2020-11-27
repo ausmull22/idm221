@@ -1,0 +1,24 @@
+
+.aboutme h1{
+    font-size: 3rem;
+    color: black;
+}
+
+.name {
+    background: white;
+}
+
+.name p {
+    box-sizing: border-box;
+    font-family: RalewayRegular;
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+.name img {
+    width: 100%;
+}
+.gradient {
+    padding: 5px;
+    background-image: linear-gradient(90deg, #0099F7,#2980b9);
+}
