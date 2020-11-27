@@ -1,5 +1,15 @@
+
+h1 {
+    color: black;
+}
+
 dl {
-    font-size: 2rem;
+    padding: 2rem 0;
+    width: auto;
+    display: flex;
+    background-image: linear-gradient(90deg, #0099F7,#2980b9);
+    font-size: 3rem;
+    color: white;
 }
 
 dd {
@@ -10,18 +20,31 @@ li {
     font-size: 2rem;
 }
 
+
+
 p {
+    padding: 10px;
     font-size: 2rem;
 }
 
 .resumesection {
     display: flex;
-    
 }
 
 .resumesection img {
+    display: block;
     width: 10%;
+    
 }
+
+
+.experiencetitle h2 {
+    font-size: 2rem;
+    color: black;
+    display: block;
+    background-color: blue;
+}
+
 
 h2 {
     color: white;
@@ -29,7 +52,7 @@ h2 {
 
 .section {
     padding: 10px;
-    background-color: white;
+    background-color: beige;
 }
 
 #education {
