@@ -23,6 +23,7 @@ p {
 .resumesection img {
     display: block;
     width: 10%;
+    height: auto;
 }
 
 .experiencetitle {
@@ -49,21 +50,34 @@ p {
 }
 
 #education {
-    background-color: aqua;
+    background-color:#3BCEAC;
 }
 
 #skills {
-    background-color: green;
+    background-color: #0EAD69;
 }
 
 #technicalskills {
-    background-color: red;
+    background-color: #ee4266;
 }
 
 #relevantcoursework {
-    background-color: yellow;
+    background-color:rgb(255, 210, 63);
 }
 
 #relevantexperience {
-    background-color: orange;
+    background-color: #8D86C9;
+}
+
+#resume {
+    position: relative;
+    top: -7rem;
+}
+
+h1.resumetop {
+    margin: auto;
+    position: relative;
+    top: -4rem;
+    width: 50%;
+    text-align: center;
 }
