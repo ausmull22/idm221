@@ -5,11 +5,17 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="../normalize.css" />
     <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../portfoliopage.css" />
+    <style>
+        body {
+            background-color: rgb(255, 210, 63);
+        }
+    </style>
 </head>
 <body>
 <!-- Header -->
    <!-- Navigation System -->
-    <div>
+    <div class= "navigation">
         <img id = "logo" src="../images/logos/logowhite.png" alt="Austin Mullin" title="Yup, that's my name."/>
         <div>
             <nav>
@@ -26,126 +32,157 @@
 <!--Navigation for Portfolio -->
     <main>
         <h1 class="portfolio">Portfolio</h1>
-        <div class="container">
-            <div class="portfolioanchor">
-                <ul>
-                    <li><a href="#animation">Animation</a></li>
-                    <li><a href="#idm">IDM</a></li>
-                    <li><a href="#photography">Photography</a></li>
-                </ul>
+        <div class="section" id="anchors">
+            <div class="appgallery" id="portfolio">
+                <div class= "app">
+                    <a target="_blank" href="#animation">
+                        <img src="../images/button/animation.png" alt="Halfpenny">
+                    </a>
+                    <div class= "application">Animation
+                    </div>
+                </div>
+    
+                <div class= "app">
+                    <a target="_blank" href="#idm">
+                        <img src="../images/button/idm.png" alt="Halfpenny">
+                    </a>
+                    <div class= "application">IDM</div>
+                </div>
+    
+                <div class= "app">
+                    <a target="_blank" href="#photography">
+                        <img src="../images/button/photography.png" alt="Halfpenny">
+                    </a>
+                    <div class= "application">Photography</div>
+                </div>
+    
+                <div class= "app">
+                    <a target="_blank" href="/portfolio/portfoliogallery.html">
+                        <img src="../images/apps/maya.png" alt="Halfpenny">
+                    </a>
+                    <div class= "application">Other</div>
+                </div>
+
             </div>
         </div>
     </main>
 <!-- Animation Gallery -->
-    <h2 class="linebothside"><a id="animation"></a>Animation</h2>
-    <div>
-        <div class="gallerycenter">
-            <div class= "gallery">
-                <a target="_blank" href="../portfolio/portfoliogallery.html">
-                    <img src="../images/thumbnails/halfpenny.jpg" alt="Halfpenny">
-                </a>
-                <div class= "featdescription">Halfpenny Management</div>
-                <div class= "date">August 2019</div>
-            </div>
+    <div class="ANIM">
+        <h2 class="linebothside"><a id="title"></a>Animation</h2>
+        <div>
+            <div class="gallerycenter">
+                <div class= "gallery">
+                    <a target="_blank" href="../portfolio/portfoliopagevideo.html">
+                        <img src="../images/thumbnails/halfpenny.jpg" alt="Halfpenny">
+                    </a>
+                    <div class= "featdescription">Halfpenny Management</div>
+                    <div class= "date">August 2019</div>
+                </div>
     
-            <div class= "gallery">
-                <a target="_blank" href="../portfolio/portfoliogallery.html">
-                    <img src="../images/thumbnails/aussome.jpg" alt="Halfpenny">
-                </a>
-                <div class= "featdescription">It's Always Sunny</div>
-                <div class= "date">December 2019</div>
-            </div>
+                <div class= "gallery">
+                    <a target="_blank" href="../portfolio/portfoliogallery.html">
+                        <img src="../images/thumbnails/aussome.jpg" alt="Halfpenny">
+                    </a>
+                    <div class= "featdescription">It's Always Sunny</div>
+                    <div class= "date">December 2019</div>
+                </div>
     
-            <div class= "gallery">
-                <a target="_blank" href="../portfolio/portfoliogallery.html">
-                    <img src="../images/thumbnails/pen.jpg" alt="Halfpenny">
-                </a>
-                <div class= "featdescription">Still Life</div>
-                <div class= "date">May 2019</div>
-            </div>
+                <div class= "gallery">
+                    <a target="_blank" href="../portfolio/portfoliogallery.html">
+                        <img src="../images/thumbnails/pen.jpg" alt="Halfpenny">
+                    </a>
+                    <div class= "featdescription">Still Life</div>
+                    <div class= "date">May 2019</div>
+                </div>
     
-            <div class= "gallery">
-                <a target="_blank" href="../portfolio/portfoliogallery.html">
-                    <img src="../images/thumbnails/sunny.jpg" alt="Halfpenny">
-                </a>
-                <div class= "featdescription">Sculptor's Room</div>
-                <div class= "date">June 2019</div>
-            </div>
-        </div>    
+                <div class= "gallery">
+                    <a target="_blank" href="../portfolio/portfoliogallery.html">
+                        <img src="../images/thumbnails/sunny.jpg" alt="Halfpenny">
+                    </a>
+                    <div class= "featdescription">Sculptor's Room</div>
+                    <div class= "date">June 2019</div>
+                </div>
+            </div>    
+        </div>
     </div>
 <!-- IDM Gallery -->
-    <h2 class="linebothside"><a id="idm"></a>Interactive Digital Media</h2>
-    <div>
-        <div class="gallerycenter">
-            <div class= "gallery">
-                <a target="_blank" href="../portfolio/portfoliogallery.html">
-                    <img src="../images/thumbnails/spotify.jpg" alt="Halfpenny">
-                </a>
-                <div class= "featdescription">YOU TAKE YOUR CAR TO WORK</div>
-                <div class= "date">January 4th 2000</div>
-            </div>
+    <div class="IDM">
+        <h2 class="linebothside"><a id="idm"></a>Interactive Digital Media</h2>
+        <div>
+            <div class="gallerycenter">
+                <div class= "gallery">
+                    <a target="_blank" href="../portfolio/portfoliogallery.html">
+                        <img src="../images/thumbnails/spotify.jpg" alt="Halfpenny">
+                    </a>
+                    <div class= "featdescription">YOU TAKE YOUR CAR TO WORK</div>
+                    <div class= "date">January 4th 2000</div>
+                </div>
 
-            <div class= "gallery">
-                <a target="_blank" href="../portfolio/portfoliogallery.html">
-                    <img src="../images/thumbnails/halfpennyweb.jpg" alt="Halfpenny">
-                </a>
-                <div class= "featdescription">YOU TAKE YOUR CAR TO WORK</div>
-                <div class= "date">January 4th 2000</div>
-            </div>
+                <div class= "gallery">
+                    <a target="_blank" href="../portfolio/portfoliogallery.html">
+                        <img src="../images/thumbnails/halfpennyweb.jpg" alt="Halfpenny">
+                    </a>
+                    <div class= "featdescription">YOU TAKE YOUR CAR TO WORK</div>
+                    <div class= "date">January 4th 2000</div>
+                </div>
     
-            <div class= "gallery">
-                <a target="_blank" href="../portfolio/portfoliogallery.html">
-                    <img src="../images/thumbnails/tylenol.jpg" alt="Halfpenny">
-                </a>
-                <div class= "featdescription">YOU TAKE YOUR CAR TO WORK</div>
-                <div class= "date">January 4th 2000</div>
-            </div>
+                <div class= "gallery">
+                    <a target="_blank" href="../portfolio/portfoliogallery.html">
+                        <img src="../images/thumbnails/tylenol.jpg" alt="Halfpenny">
+                    </a>
+                    <div class= "featdescription">YOU TAKE YOUR CAR TO WORK</div>
+                    <div class= "date">January 4th 2000</div>
+                </div>
     
-            <div class= "gallery">
-                <a target="_blank" href="../portfolio/portfoliogallery.html">
-                    <img src="../images/thumbnails/investigator.jpg" alt="Halfpenny">
-                </a>
-                <div class= "featdescription">YOU TAKE YOUR CAR TO WORK</div>
-                <div class= "date">January 4th 2000</div>
-            </div>
-        </div>    
+                <div class= "gallery">
+                    <a target="_blank" href="../portfolio/portfoliogallery.html">
+                        <img src="../images/thumbnails/investigator.jpg" alt="Halfpenny">
+                    </a>
+                    <div class= "featdescription">YOU TAKE YOUR CAR TO WORK</div>
+                    <div class= "date">January 4th 2000</div>
+                </div>
+            </div>    
+        </div>
     </div>
 <!-- Photography Gallery -->
-    <h2 class="linebothside"><a id="photography"></a>Photography</h2>
-    <div>
-        <div class="gallerycenter">
-            <div class= "gallery">
-                <a target="_blank" href="../portfolio/portfoliogallery.html">
-                    <img src="../images/thumbnails/pen.jpg" alt="Halfpenny">
-                </a>
-                <div class= "featdescription">YOU TAKE YOUR CAR TO WORK</div>
-                <div class= "date">January 4th 2000</div>
-            </div>
+    <div class="PHOTO">
+        <h2 class="linebothside"><a id="photography"></a>Photography</h2>
+        <div>
+            <div class="gallerycenter">
+                <div class= "gallery">
+                    <a target="_blank" href="../portfolio/portfoliogallery.html">
+                        <img src="../images/thumbnails/pen.jpg" alt="Halfpenny">
+                    </a>
+                    <div class= "featdescription">YOU TAKE YOUR CAR TO WORK</div>
+                    <div class= "date">January 4th 2000</div>
+                </div>
     
-            <div class= "gallery">
-                <a target="_blank" href="../portfolio/portfoliogallery.html">
-                    <img src="../images/thumbnails/pen.jpg" alt="Halfpenny">
-                </a>
-                <div class= "featdescription">YOU TAKE YOUR CAR TO WORK</div>
-                <div class= "date">January 4th 2000</div>
-            </div>
+                <div class= "gallery">
+                    <a target="_blank" href="../portfolio/portfoliogallery.html">
+                        <img src="../images/thumbnails/pen.jpg" alt="Halfpenny">
+                    </a>
+                    <div class= "featdescription">YOU TAKE YOUR CAR TO WORK</div>
+                    <div class= "date">January 4th 2000</div>
+                </div>
     
-            <div class= "gallery">
-                <a target="_blank" href="../portfolio/portfoliogallery.html">
-                    <img src="../images/thumbnails/pen.jpg" alt="Halfpenny">
-                </a>
-                <div class= "featdescription">YOU TAKE YOUR CAR TO WORK</div>
-                <div class= "date">January 4th 2000</div>
-            </div>
+                <div class= "gallery">
+                    <a target="_blank" href="../portfolio/portfoliogallery.html">
+                        <img src="../images/thumbnails/pen.jpg" alt="Halfpenny">
+                    </a>
+                    <div class= "featdescription">YOU TAKE YOUR CAR TO WORK</div>
+                    <div class= "date">January 4th 2000</div>
+                </div>
     
-            <div class= "gallery">
-                <a target="_blank" href="../portfolio/portfoliogallery.html">
-                    <img src="../images/thumbnails/pen.jpg" alt="Halfpenny">
-                </a>
-                <div class= "featdescription">YOU TAKE YOUR CAR TO WORK</div>
-                <div class= "date">January 4th 2000</div>
-            </div>
-        </div>    
+                <div class= "gallery">
+                    <a target="_blank" href="../portfolio/portfoliogallery.html">
+                        <img src="../images/thumbnails/pen.jpg" alt="Halfpenny">
+                    </a>
+                    <div class= "featdescription">YOU TAKE YOUR CAR TO WORK</div>
+                    <div class= "date">January 4th 2000</div>
+                </div>
+            </div>    
+        </div>
     </div>
+
 </body>
     

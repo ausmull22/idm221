@@ -3,23 +3,12 @@ h1 {
     color: black;
 }
 
-dl {
+li {
     padding: 2rem 0;
     width: auto;
-    display: flex;
-    background-image: linear-gradient(90deg, #0099F7,#2980b9);
-    font-size: 3rem;
-    color: white;
-}
-
-dd {
     font-size: 2rem;
+    color: black;
 }
-
-li {
-    font-size: 2rem;
-}
-
 
 
 p {
@@ -34,21 +23,25 @@ p {
 .resumesection img {
     display: block;
     width: 10%;
-    
 }
 
+.experiencetitle {
+}
 
 .experiencetitle h2 {
     font-size: 2rem;
     color: black;
     display: block;
-    background-color: blue;
 }
 
-
-h2 {
-    color: white;
+.experiencetitle h3 {
+    font-family: RalewayRegular;
+    font-size: 2rem;
+    color: black;
+    margin: 10px;
+    display: block;
 }
+
 
 .section {
     padding: 10px;

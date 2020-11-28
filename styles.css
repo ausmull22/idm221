@@ -9,7 +9,6 @@ header {
 
 /*! Dividers */
 
-
 hr.dashed {
     border-top: 3px dashed #bbb;
     display: inline-block;
@@ -29,6 +28,23 @@ hr.dashed {
 @font-face {
     font-family: "RalewayThin";
     src: url("fonts/Raleway-Thin.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: "DenseLetters";
+    src: url("fonts/DenseLetters.otf") format("opentype");
+}
+
+
+@font-face {
+    font-family: "Lulusma";
+    src: url("fonts/Lulusma.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "LulusmaBold";
+    src: url("fonts/LulusmaBold.otf") format("opentype");
 }
 
 /*! Navigation */
@@ -78,8 +94,7 @@ nav > ul > li:hover {
 /*! Footer */
 
 footer {
-    background-color: mediumseagreen;
-    position: relative;
+    background-color: black;
     font: 1rem, arial; 
     color: #ffffff;
     list-style: none;
@@ -106,7 +121,6 @@ footer {
 
 h1 {
     font-size: 3rem;
-    text-align: center;
     display: block;
     font-family: RalewayRegular;
     color: #ffffff;
@@ -156,6 +170,8 @@ button {
     text-align: center;
     padding: 20px;
     margin: 0 auto;
+    position: relative;
+    top: 1rem;
     object-fit: fill;
     font-family: RalewayRegular;
     color: black;
@@ -184,7 +200,7 @@ div.group {
 }
 
 .description > h2 {
-    font-family: RalewayRegular;
+    font-family: LulusmaBold;
     margin-bottom: -5rem;
     color: black;
 }
@@ -210,11 +226,12 @@ div.project p {
 }
 
 div.gallery {
-    background-color: black;
+    margin: 10px;
     width: fit-content;
 }
 
 div.gallery img {
+    border-radius: px;
     width: 100%;
 }
 
@@ -222,20 +239,18 @@ div.gallery img {
 
 div.date {
     color: white;
-    padding: 5px;
-    margin: 5px 10px;
+    padding: 0 10px;
     text-align: left;
     font-size: 24px;
-    font-family: RalewayRegular;
+    font-family: Lulusma;
 }
 
 div.featdescription {
     color: white;
     font-size: 30px;
-    margin: 5px 10px;
-    padding: 5px;
+    padding: 0 10px;
     text-align: left;
-    font-family: RalewayRegular;
+    font-family: LulusmaBold;
 }
 
 /*! Portfolio Gallery Navigation */
@@ -261,8 +276,13 @@ div.portfolioanchor ul li a {
 
 h1.portfolio {
     text-transform: uppercase;
-    font-family: RalewayRegular;
-    letter-spacing: 40px;
+    font-family: DenseLetters;
+    font-size: 5rem;
+    margin: -1rem;
+    position: relative;
+    top: -0.6rem;
+    letter-spacing: 3rem;
+    color: black;
     text-align: center;
 }
 
@@ -348,11 +368,83 @@ div.portfolioanchor ul li a {
 }
 
 
+h2 #title {
+    text-align: center;
+}
+
 /*Contact */
 
-.contact a {
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
-    font-size: 50px;
+
+
+ #portfolio {
+     background-color: white;
  }
+
+ #anchors {
+    background-color: rgb(255, 210, 63);
+ }
+
+ .ANIM {
+    background-color: #ee4266;
+ }
+
+ .IDM {
+    background-color: #0EAD69;
+ }
+
+ .PHOTO {
+    background-color: #3BCEAC;
+ }
+
+
+.navigation {
+    background-color: black;
+}
+
+
+.featuredproject {
+    background-color: #ee4266;
+}
+
+.contact {
+    display: flex;
+    margin: 0 auto;
+}
+
+.phonenumber {
+    margin: 10px;
+}
+
+.phonenumber img {
+    width: 5rem;
+}
+
+.phonenumber p {
+    font-size: 2rem;
+    position: relative;
+    top: -1.5rem;
+}
+
+.animation {
+    display: block;
+    background-color: #ee4266;
+}
+
+.animation p {
+    margin: 0;
+    display: inline;
+    position: relative;
+    font-family: LulusmaBold;
+    top: -20px;
+    color: white;
+    font-size: 4rem;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.animation img {
+    margin: 10px;
+    filter: invert();
+    width: 5rem;
+    height: auto;
+}
