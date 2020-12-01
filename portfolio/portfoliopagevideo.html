@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="../normalize.css" />
     <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="../portfoliopage.css">
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <!-- Header -->
 <body>
@@ -24,9 +25,9 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="portfolio/portfoliogallery.html">Portfolio</a></li>
-                    <li><a href="about/aboutme.html">About Me</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../portfolio/portfoliogallery.html">Portfolio</a></li>
+                    <li><a href="../about/aboutme.html">About Me</a></li>
                     <li><a href="about/resume.html">Resume</a></li>
                 </ul>
             </nav>
@@ -87,9 +88,70 @@
 <!-- Breakdown Used -->
     <div class="breakdown">
         <h1>Breakdown</h1>
+        <div class="w3-content w3-display-container">
 
+            <div class="w3-display-container mySlides">
+              <img src="../images/thumbnails/aussome.jpg" style="width:100%">
+              <div class="gallerydescription">
+                French Alps
+              </div>
+            </div>
+            
+            <div class="w3-display-container mySlides">
+              <img src="../images/thumbnails/composition.jpg" style="width:100%">
+              <div class="gallerydescription">
+                Northern Lights
+              </div>
+            </div>
+            
+            <div class="w3-display-container mySlides">
+              <img src="../images/thumbnails/holographic.jpg" style="width:100%">
+              <div class="gallerydescription">
+                Beautiful Mountains
+              </div>
+            </div>
+            
+            <div class="w3-display-container mySlides">
+              <img src="../images/thumbnails/pen.jpg" style="width:100%">
+              <div class="gallerydescription">
+                The Rain Forest
+              </div>
+            </div>
+            
+            <div class="w3-display-container mySlides">
+              <img src="img_mountains.jpg" style="width:100%">
+              <div class="gallerydescription">
+                Mountains!
+              </div>
+            </div>
+            
+            <div class="gallerybuttons">
+                <button class="leftbutton" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="rightbutton" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+            </div>
+            
     </div>
 
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
 <!-- Return to Portolio/Back to Top -->
 
     <div class="return">
@@ -97,7 +159,4 @@
         </a>
         <img src="../images/button/rightarrow.png" alt="">
     </div>
-    
-
-    
 </body>

@@ -129,3 +129,37 @@ div.return img {
     float: right;
     width: 60px;
 }
+
+.gallerybuttons {
+    display: block;
+    text-align: center;
+    position: relative;
+    color: black;
+}
+
+.rightbutton {
+    width: 5rem;
+    margin: 2rem 2rem;
+    height: 5rem;
+    background-color: transparent;
+    color: white;
+    border-radius: 50px;
+    border: 5px solid white;
+    
+}
+.leftbutton {
+    width: 5rem;
+    margin: 2rem 2rem;
+    height: 5rem;
+    background-color: transparent;
+    color: white;
+    border-radius: 50px;
+    border: 5px solid white;
+}
+
+.gallerydescription {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}

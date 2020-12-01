@@ -3,6 +3,13 @@ h1 {
     color: black;
 }
 
+
+ul.columnlist {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
 li {
     padding: 2rem 0;
     width: auto;
@@ -18,16 +25,16 @@ p {
 
 .resumesection {
     display: flex;
+    box-shadow: 0px 3px 6px;
 }
 
 .resumesection img {
-    display: block;
+    display: inline-block;
+    margin: 10px;
     width: 10%;
-    height: auto;
+    height: 10%;
 }
 
-.experiencetitle {
-}
 
 .experiencetitle h2 {
     font-size: 2rem;
@@ -46,7 +53,6 @@ p {
 
 .section {
     padding: 10px;
-    background-color: beige;
 }
 
 #education {
@@ -75,9 +81,13 @@ p {
 }
 
 h1.resumetop {
-    margin: auto;
+    display: block;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
     position: relative;
     top: -4rem;
-    width: 50%;
-    text-align: center;
+    object-fit: fill;
+    font-family: DenseLetters;
+    color: black;
 }

@@ -1,10 +1,12 @@
 
-
 /*! Header */
 header {
-    display: block;
     padding: 10px;
     background-color: black;
+}
+
+nav {
+    box-sizing: border-box;
 }
 
 /*! Dividers */
@@ -121,7 +123,7 @@ footer {
 
 h1 {
     font-size: 3rem;
-    display: block;
+    display: inline-block;
     font-family: RalewayRegular;
     color: #ffffff;
 }
@@ -173,7 +175,7 @@ button {
     position: relative;
     top: 1rem;
     object-fit: fill;
-    font-family: RalewayRegular;
+    font-family: DenseLetters;
     color: black;
 }
 
@@ -222,33 +224,37 @@ div.project p {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: minmax(100px, auto);
-    width: fit-content;
+    width: auto;
 }
 
 div.gallery {
     margin: 10px;
-    width: fit-content;
+    background-color: white;
+    white-space: normal;
+    box-shadow: rgba(0, 0, 0, 0.466) 10px 10px 5px;
 }
 
 div.gallery img {
-    border-radius: px;
-    width: 100%;
+    margin: 10px;
+    width: 95%;
 }
 
 /*! Gallery on Tages (Applications Used for Portfolio) */
 
 div.date {
-    color: white;
-    padding: 0 10px;
+    color: black;
+    padding: 10px 0px;
     text-align: left;
-    font-size: 24px;
+    margin: 0 10px;
+    font-size: 30px;
     font-family: Lulusma;
 }
 
 div.featdescription {
-    color: white;
+    color:  black;
     font-size: 30px;
-    padding: 0 10px;
+    margin: 10px;
+    padding: 0 0 -5px 0;
     text-align: left;
     font-family: LulusmaBold;
 }
@@ -276,23 +282,37 @@ div.portfolioanchor ul li a {
 
 h1.portfolio {
     text-transform: uppercase;
+    text-align: center;
     font-family: DenseLetters;
     font-size: 5rem;
-    margin: -1rem;
-    position: relative;
-    top: -0.6rem;
     letter-spacing: 3rem;
     color: black;
-    text-align: center;
+    display: flex;
+    position: relative;
+    top: -1rem;
+    right: -1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 h2 {
-    font-family: RalewayRegular;
+    font-family: DenseLetters;
     font-size: 50px;
     margin: 10px;
     padding: 10px 0;
     color: white;
     display: inline-block;
+    
+}
+
+h2 #title {
+    font-family: RalewayRegular;
+    font-size: 50px;
+    margin: 10px;
+    padding: 10px 0;
+    color: white;
+    display: inline-block; 
+    text-align: center;
 }
 
 /*! Portfolio Anchor*/
@@ -374,27 +394,26 @@ h2 #title {
 
 /*Contact */
 
-
-
- #portfolio {
-     background-color: white;
+#portfolio {
+    background-color: white;
  }
 
- #anchors {
+
+#anchors {
     background-color: rgb(255, 210, 63);
- }
+}
 
- .ANIM {
+.ANIM {
     background-color: #ee4266;
- }
+}
 
- .IDM {
+.IDM {
     background-color: #0EAD69;
- }
+}
 
- .PHOTO {
+.PHOTO {
     background-color: #3BCEAC;
- }
+}
 
 
 .navigation {
@@ -407,13 +426,14 @@ h2 #title {
 }
 
 .contact {
-    display: flex;
-    margin: 0 auto;
+    display: grid;
+    clear: both;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(10px, auto);
+    margin: 0 15rem;
+
 }
 
-.phonenumber {
-    margin: 10px;
-}
 
 .phonenumber img {
     width: 5rem;
