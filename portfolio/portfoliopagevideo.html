@@ -8,9 +8,9 @@
             background-color: #3BCEAC;
         }
     </style>
-    <link rel="stylesheet" href="../normalize.css" />
-    <link rel="stylesheet" href="../styles.css" />
-    <link rel="stylesheet" href="../portfoliopage.css">
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/portfoliopage.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
@@ -33,16 +33,17 @@
             </nav>
         </div>
     </header>
-<!-- Template Page -->
+<!-- Page Category -->
     <div class="animation">
-        <img src="../images/button/animation.png" alt="">
+        <img src="../images/button/animation.png" alt="Animation">
         <p>Animation</p>
     </div>
-    <div class="bg-image"></div>
+<!-- Title of the Post -->
     <div class="title">
         <h1>Failed Streaming Services - Mullinmen Rewind</h1>
         <h3>10/12/2020</h3>
     </div>
+<!-- The Media (iFrame) -->
     <div class="iframestrip">
         <iframe width="1280" height="720" src="https://www.youtube.com/embed/qIqs1pGHBl4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
     </iframe>
@@ -85,7 +86,7 @@
             </div>  
         </div>
     </div>
-<!-- Breakdown Used -->
+<!-- Breakdown/Gallery -->
     <div class="breakdown">
         <h1>Breakdown</h1>
         <div class="w3-content w3-display-container">
@@ -129,9 +130,10 @@
                 <button class="leftbutton" onclick="plusDivs(-1)">&#10094;</button>
                 <button class="rightbutton" onclick="plusDivs(1)">&#10095;</button>
             </div>
-            </div>
             
     </div>
+
+    <!-- Script Used to Develop Breakdown/Gallery -->
 
     <script>
         var slideIndex = 1;
@@ -153,7 +155,6 @@
         }
         </script>
 <!-- Return to Portolio/Back to Top -->
-
     <div class="return">
         <a target="_blank" href="../portfolio/portfoliogallery.html">Return to Portfolio Page
         </a>
