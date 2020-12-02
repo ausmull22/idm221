@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iFrame Test</title>
+    <style>
+        body {
+            background-color: #3BCEAC;
+        }
+    </style>
+    <link rel="stylesheet" href="../../styles/normalize.css" />
+    <link rel="stylesheet" href="../../styles/styles.css" />
+    <link rel="stylesheet" href="../../styles/portfoliopage.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<!-- Header -->
+<body>
+    <!-- Navigation System -->
+    <header>
+        <!-- Navigation System -->
+        <div class="container">
+            <div>
+                <img id = "logo" src="../../images/logos/logowhite.png" alt="Austin Mullin" title="Yup, that's my name."/>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../portfolio/portfoliogallery.html">Portfolio</a></li>
+                    <li><a href="../../about/aboutme.html">About Me</a></li>
+                    <li><a href="../about/resume.html">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<!-- Page Category -->
+    <div class="animation">
+        <img src="../../images/button/animation.png" alt="Animation">
+        <p>Animation</p>
+    </div>
+<!-- Title of the Post -->
+    <div class="title">
+        <h1>Pen Deconstruction</h1>
+        <h3>10/12/2020</h3>
+    </div>
+<!-- The Media (iFrame) -->
+    <div class="iframestrip">
+        <video controls autoplay poster="media/myvideo-poster.jpg">
+        <source src0="../../video/animation/halfpenny/halfpenny.mp4" type="video/mp4" />
+        <source src="../../video/animation/halfpenny/halfpenny.webm" type="video/webm" />
+        <source src="../../video/animation/halfpenny/halfpenny.ogg" type="video/ogg" />
+        </video>  
+    </div>
+<!-- Description -->
+    <div class="piecedescription">
+        <p>Originally an assignment for ANIM141: Computer Graphics Imagery II. The goal of the assingment was to develop all pieces of a ballpen in scale.</p>
+    </div>
+
+<!-- Application Used -->
+    <div class="applicationsused">
+        <h1>Applications Used</h1>
+        <div class="appgallery">
+            <div class= "app">
+                <a target="_blank" href="/portfolio/portfoliogallery.html">
+                    <img src="../../images/apps/substance.png" alt="Halfpenny">
+                </a>
+                <div class= "application">Substance Painter</div>
+            </div>
+    
+            <div class= "app">
+                <a target="_blank" href="/portfolio/portfoliogallery.html">
+                    <img src="../../images/apps/photoshop.png" alt="Halfpenny">
+                </a>
+                <div class= "application">Adobe Photoshop</div>
+            </div>
+    
+            <div class= "app">
+                <a target="_blank" href="/portfolio/portfoliogallery.html">
+                    <img src="../../images/apps/maya.png" alt="Halfpenny">
+                </a>
+                <div class= "application">Autodesk Maya</div>
+            </div>  
+        </div>
+    </div>
+<!-- Breakdown/Gallery -->
+    <div class="breakdown">
+        <h1>Breakdown</h1>
+        <div class="w3-content w3-display-container">
+
+            <div class="w3-display-container mySlides">
+              <img src="../../images/animations/pen/breakdown/beauty_render_1.jpeg" style="width:100%">
+              <div class="gallerydescription">
+                Beauty Render #1
+              </div>
+            </div>
+            
+            <div class="w3-display-container mySlides">
+              <img src="../../images/animations/pen/breakdown/beauty_render_2.jpeg" style="width:100%">
+              <div class="gallerydescription">
+                Beauty Render #2
+              </div>
+            </div>
+            
+            <div class="w3-display-container mySlides">
+              <img src="../../images/animations/pen/breakdown/complete_clay.jpg" style="width:100%">
+              <div class="gallerydescription">
+                Clay Complete
+              </div>
+            </div>
+            
+            <div class="w3-display-container mySlides">
+              <img src="../../images/animations/pen/breakdown/exploded_clay.jpg" style="width:100%">
+              <div class="gallerydescription">
+                Clay Exploded
+              </div>
+            </div>
+            
+            <div class="w3-display-container mySlides">
+              <img src="../../images/animations/pen/breakdown/wireframe_complete.jpg" style="width:100%">
+              <div class="gallerydescription">
+                Wireframe Complete
+              </div>
+
+            <div class="w3-display-container mySlides">
+                <img src="../../images/animations/pen/breakdown/wireframe_exploded.jpg" style="width:100%">
+                <div class="gallerydescription">
+                Wireframe Exploded
+                </div>
+            </div>
+        </div>
+        <div class="gallerybuttons">
+            <button class="leftbutton" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="rightbutton" onclick="plusDivs(1)">&#10095;</button>
+        </div>  
+    </div>
+
+    <!-- Script Used to Develop Breakdown/Gallery -->
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+<!-- Return to Portolio/Back to Top -->
+    <div class="return">
+        <a target="_blank" href="../portfolio/portfoliogallery.html">Return to Portfolio Page
+        </a>
+        <img src="../images/button/rightarrow.png" alt="">
+    </div>
+</body>

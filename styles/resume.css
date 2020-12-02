@@ -1,7 +1,4 @@
 
-h1 {
-    color: black;
-}
 
 
 ul.columnlist {
@@ -10,7 +7,7 @@ ul.columnlist {
     -moz-columns: 2;
 }
 
-li {
+li.skills {
     padding: 2rem 0;
     width: auto;
     font-size: 2rem;
@@ -35,9 +32,10 @@ p {
     height: 10%;
 }
 
-
 .experiencetitle h2 {
     font-size: 2rem;
+    font-family: RalewayRegular;
+    text-align: left;
     color: black;
     display: block;
 }
@@ -45,22 +43,28 @@ p {
 .experiencetitle h3 {
     font-family: RalewayRegular;
     font-size: 2rem;
+    text-align: left;
     color: black;
     margin: 10px;
     display: block;
 }
 
+.section ul li {
+    font-size: 2rem;
+    padding: 2rem;
+
+}
 
 .section {
     padding: 10px;
 }
 
 #education {
-    background-color:#3BCEAC;
+    background-color:#08c741;
 }
 
 #skills {
-    background-color: #0EAD69;
+    background-color: #fad400;
 }
 
 #technicalskills {
@@ -68,7 +72,7 @@ p {
 }
 
 #relevantcoursework {
-    background-color:rgb(255, 210, 63);
+    background-color:rgba(255, 72, 0, 0.945);
 }
 
 #relevantexperience {
@@ -88,6 +92,19 @@ h1.resumetop {
     position: relative;
     top: -4rem;
     object-fit: fill;
-    font-family: DenseLetters;
+    font-size: 5rem;
+    font-family: RalewayThin;
+    color: black;
+}
+
+h2.resumetop {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    position: relative;
+    top: -4rem;
+    object-fit: fill;
+    font-family: RalewayThin;
     color: black;
 }

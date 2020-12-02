@@ -29,6 +29,12 @@
     padding: 10px;
 }
 
+iframe {
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 .iframestrip {
     background-color: black;
     width: 100%;
@@ -37,7 +43,12 @@
     position: relative;
 }
 
-.iframestrip iframe {
+#adobexd iframe {
+    position: relative;
+    top: -6rem;
+}
+
+.iframestrip video {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -95,7 +106,7 @@ div.app {
     margin: 10px auto;
     float: left;
     padding: 10px;
-    max-width: 200px;
+    max-width: 250px;
     justify-content: center;
 }
 
@@ -162,4 +173,17 @@ div.return img {
     text-align: center;
     color: white;
     font-size: 3rem;
+}
+
+d1.border {
+    background-color: black;
+}
+
+.breakdown {
+    background-color: black;
+}
+
+.gradient {
+    padding: 5px;
+    background-color: black;
 }
