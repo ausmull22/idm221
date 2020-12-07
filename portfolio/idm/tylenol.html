@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tylenol.com Redesign - austinMULLIN</title>
+    <link rel="stylesheet" href="../../styles/normalize.css" />
+    <link rel="stylesheet" href="../../styles/styles.css" />
+    <link rel="stylesheet" href="../../styles/portfoliopage.css" />
+    <link rel="stylesheet" href="../../styles/dropdown.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<!-- Header -->
+<body>
+    <header>
+        <div class="topnav">
+            <a href="../../index.html" class="active"><img id = "logo" src="../../images/logos/logowhite.png" alt="Austin Mullin"/></a>
+
+            <div id="myLinks">
+                <a href="../../index.html">Home</a>
+                <a href="../../portfolio/portfoliogallery.html">Portfolio</a>
+                <a href="../../about/aboutme.html">About Me</a>
+                <a href="../../about/resume.html">Resume</a>
+            </div>
+                    
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <script>
+                function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+                }
+                </script>
+        </div>
+    </header>
+<!-- Page Category -->
+    <div class="category">
+        <a target="_self" href="../portfoliogallery.html#idm">
+        <img src="../../images/button/idm.png" alt="Interactive Digital Media">
+        <p>Interactive Digtial Media</p>
+        </a>
+    </div>
+<!-- Title of the Post -->
+    <div class="title">
+        <h1>Tylenol.com Redesign</h1>
+        <h3>December 2020</h3>
+    </div>
+<!-- The Media (iFrame) -->
+<div class="border">
+    <div class="w3-content w3-display-container">
+
+        <div class="w3-display-container mySlides">
+            <img src="../../images/idm/tylenol/tylenol01.jpg" alt="ProductPage" style="width:100%">
+            <div class="gallerydescription">HomePage</div>
+        </div>
+        
+        <div class="w3-display-container mySlides">
+            <img src="../../images/idm/tylenol/tylenol02.jpg" alt="ProdcutGallety" style="width:100%">
+            <div class="gallerydescription">Product Gallery</div>
+        </div>
+        
+        <div class="w3-display-container mySlides">
+            <img src="../../images/idm/tylenol/tylenol03.jpg" alt="ProductPage" style="width:100%">
+            <div class="gallerydescription">Product Page</div>
+        </div>
+        
+        <div class="w3-display-container mySlides">
+            <img src="../../images/idm/tylenol/tylenol04.jpg" alt="SafetyPage" style="width:100%">
+            <div class="gallerydescription">Safety Page</div>
+        </div>
+    </div>
+    
+    <div class="gallerybuttons">
+        <button class="leftbutton" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="rightbutton" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+        
+</div>
+
+<!-- Script Used to Develop Breakdown/Gallery -->
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+<!-- Description -->
+    <div class="piecedescription">
+        <p> With Tylenol being a medicine brand, the goal of the website is to allow consumers
+             to find the right product that will help them relieve any health issues they are dealing with,
+              including cold or flu. In addition, they offer other resources to further help those who are sick. 
+              An example would be a page dedicated to relaxation techniques to relieve headaches.
+        </p>
+    </div>
+
+<!-- Application Used -->
+    <div class="applicationsused">
+        <h1>Applications Used</h1>
+        <div class="appgallery">
+            <div class= "app">
+                <img src="../../images/apps/invision.png" alt="Inviison Studios">
+                <div class= "application">InVision Studio</div>
+            </div>
+    
+            <div class= "app">
+                <img src="../../images/apps/photoshop.png" alt="Adobe Photoshop">
+                <div class= "application">Adobe Photoshop</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class = "socialmedia">
+            <a href="https://500px.com/p/ausmullin?view=photos"><img src="../../images/socialmedia/500px.png" alt="500px"></a>
+            <a href="https://www.linkedin.com/in/austinmullin/"><img src="../../images/socialmedia/linkedin.png" alt="linkedin"></a>
+            <a href="https://medium.com/@ausmullin"><img  src="../../images/socialmedia/medium.png" alt="medium"></a>
+        </div>
+    </footer>
+</body>

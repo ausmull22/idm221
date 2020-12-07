@@ -1,0 +1,59 @@
+/* //........................................................................................................................................................................
+//.DDDDDDDD.....RRRRRRRRR........OOOO......PPPPPPPP....DDDDDDDD.........OOOO.....OWW....WWW....WWW.NNN.....NNN.......MMMM.....MMMM..EEEEEEEEEE..NNN.....NNN..UUU.....UUU..
+//.DDDDDDDDDD...RRRRRRRRRR.....OOOOOOOO....PPPPPPPPP...DDDDDDDDDD.....OOOOOOOO...OWW....WWW....WWW.NNNN....NNN.......MMMM.....MMMM..EEEEEEEEEE..NNNN....NNN..UUU.....UUU..
+//.DDDDDDDDDD...RRRRRRRRRRR...OOOOOOOOOO...PPPPPPPPPP..DDDDDDDDDD....OOOOOOOOOO..OWW...WWWWW...WWW.NNNNN...NNN.......MMMMM...MMMMM..EEEEEEEEEE..NNNNN...NNN..UUU.....UUU..
+//.DDD....DDDD..RRR.....RRR...OOO....OOO...PPP....PPP..DDD....DDDD...OOO....OOO...WWW..WW.WW..WWW..NNNNN...NNN.......MMMMM...MMMMM..EEE.........NNNNN...NNN..UUU.....UUU..
+//.DDD.....DDD..RRR.....RRR..OOO......OOO..PPP....PPP..DDD.....DDD..OOO......OOO..WWW..WW.WW..WWW..NNNNNN..NNN.......MMMMM...MMMMM..EEE.........NNNNNN..NNN..UUU.....UUU..
+//.DDD.....DDD..RRRRRRRRRRR..OOO......OOO..PPPPPPPPPP..DDD.....DDD..OOO......OOO..WWW.WWW.WWW.WWW..NNN.NN..NNN.......MMM.MM.MM.MMM..EEEEEEEEEE..NNN.NN..NNN..UUU.....UUU..
+//.DDD.....DDD..RRRRRRRRRR...OOO......OOO..PPPPPPPPP...DDD.....DDD..OOO......OOO..WWW.WWW.WWW.WWW..NNN.NNN.NNN.......MMM.MM.MM.MMM..EEEEEEEEEE..NNN.NNN.NNN..UUU.....UUU..
+//.DDD.....DDD..RRRRRRRR.....OOO......OOO..PPPPPPPP....DDD.....DDD..OOO......OOO..WWW.WW...WW.WWW..NNN..NN.NNN.......MMM.MM.MM.MMM..EEEEEEEEEE..NNN..NN.NNN..UUU.....UUU..
+//.DDD.....DDD..RRR..RRRR....OOO......OOO..PPP.........DDD.....DDD..OOO......OOO..WWW.WW...WW.WWW..NNN..NNNNNN.......MMM.MM.MM.MMM..EEE.........NNN..NNNNNN..UUU.....UUU..
+//.DDD....DDDD..RRR...RRRR....OOO....OOO...PPP.........DDD....DDDD...OOO....OOO....WWWWW...WWWWW...NNN...NNNNN.......MMM..MMM..MMM..EEE.........NNN...NNNNN..UUUU...UUUU..
+//.DDDDDDDDDD...RRR....RRR....OOOOOOOOOO...PPP.........DDDDDDDDDD....OOOOOOOOOO....WWWWW...WWWWW...NNN...NNNNN.......MMM..MMM..MMM..EEEEEEEEEE..NNN...NNNNN...UUUUUUUUU...
+//.DDDDDDDDDD...RRR....RRRR....OOOOOOOO....PPP.........DDDDDDDDDD.....OOOOOOOO.....WWWW.....WWWW...NNN....NNNN.......MMM..MMM..MMM..EEEEEEEEEE..NNN....NNNN...UUUUUUUUU...
+//.DDDDDDDD.....RRR.....RRRR.....OOOO......PPP.........DDDDDDDD.........OOOO.......WWWW.....WWWW...NNN.....NNN.......MMM...M...MMM..EEEEEEEEEE..NNN.....NNN.....UUUUU.....
+//........................................................................................................................................................................
+
+/* Style the navigation menu */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    position: relative;
+    width: fit-content;
+  }
+  
+  /* Closes links */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    display: block;
+    font-family: RalewayRegular;
+    font-size: 2rem;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: fit-content;
+  }
+  
+  /* Hamburger Icon */
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Background color */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: rgb(33, 43, 65);
+    color: white;
+  }

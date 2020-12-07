@@ -1,194 +1,363 @@
 
-.bg-image {
-    background-image: url(../images/portraits/austinfullbody.jpg);
-    filter: blur(10px);
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+/*
+
+//.........................................................................................................
+//.PPPPPPPP........OOOO........SSSSSS...STTTTTTTTTT......PPPPPPPP......AAAAA.........GGGGG.....GEEEEEEEEE..
+//.PPPPPPPPP.....OOOOOOOO.....SSSSSSSS..STTTTTTTTTT......PPPPPPPPP.....AAAAA.......GGGGGGGGG...GEEEEEEEEE..
+//.PPPPPPPPPP...OOOOOOOOOO...SSSSSSSSSS.STTTTTTTTTT......PPPPPPPPPP....AAAAA......GGGGGGGGGG...GEEEEEEEEE..
+//.PPP....PPP...OOO....OOO...SSS....SSS.....TTT..........PPP....PPP...AAA.AAA.....GGG....GGGG..GEE.........
+//.PPP....PPP..OOO......OOO..SSS............TTT..........PPP....PPP...AAA.AAA....AGG......GG...GEE.........
+//.PPPPPPPPPP..OOO......OOO..SSSSSSS........TTT..........PPPPPPPPPP...AAA.AAA....AGG...........GEEEEEEEEE..
+//.PPPPPPPPP...OOO......OOO...SSSSSSSS......TTT..........PPPPPPPPP...AAA...AAA...AGG...GGGGGG..GEEEEEEEEE..
+//.PPPPPPPP....OOO......OOO.....SSSSSSS.....TTT..........PPPPPPPP....AAAAAAAAA...AGG...GGGGGG..GEEEEEEEEE..
+//.PPP.........OOO......OOO.........SSS.....TTT..........PPP.........AAAAAAAAA...AGG...GGGGGG..GEE.........
+//.PPP..........OOO....OOO...SSS....SSS.....TTT..........PPP........PAAAAAAAAAA...GGG.....GGG..GEE.........
+//.PPP..........OOOOOOOOOO...SSSSSSSSSS.....TTT..........PPP........PAA.....AAA...GGGGGGGGGGG..GEEEEEEEEE..
+//.PPP...........OOOOOOOO.....SSSSSSSS......TTT..........PPP........PAA.....AAA....GGGGGGGGG...GEEEEEEEEE..
+//.PPP.............OOOO........SSSSSS.......TTT..........PPP.......PPA.......AAA.....GGGGG.....GEEEEEEEEE..
+//.........................................................................................................
+*/
+
+
+/* Titles  */
+
 
 .title {
     margin-top: 10px;
 }
 
 .title h1 {
+    color: black;
+    display: block;
+    font-family: RalewayExtraBold;
+    margin: 10px;
     position: relative;
     text-align: center;
     top: 10px;
-    margin: 10px;
-    display: block;
-    color: white;
 }
 
 .title h3 {
-    text-align: center;
-    position: relative;
+    color: black;
     font-size: 1.50rem;
-    color: white;
     padding: 10px;
+    position: relative;
+    text-align: center;
 }
 
 iframe {
-    width: auto;
     display: block;
     margin: 0 auto;
+    width: auto;
 }
+
+/* Borders/Scaling for iFrame-related projects  */
+
 
 .iframestrip {
     background-color: black;
-    width: 100%;
     height: 0;
     padding-bottom: 56.25%;
     position: relative;
+    width: auto;
 }
+
+/* iFrame for AdobeXd-related projects  */
+
 
 #adobexd iframe {
     position: relative;
-    top: -6rem;
+    width: 100%;
 }
+
+/* iFrame for projects for video projects */
 
 .iframestrip video {
+    display: block;
+    height: 100%;
+    margin: auto;
     position: absolute;
     width: 100%;
-    height: 100%;
-    display: block;
-    margin: auto;
 }
 
-.description {
-    background-image: url(/images/portraits/austinfullbody.jpg);
-    filter: blur(10px);
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+/* Font/Margins for Description Block of Portofolio Post Page */
 
 .piecedescription p {
-    text-align: center;
-    color:white;
+    color:black;
     font-family: RalewayRegular;
-    padding: 3rem;
-    font-size: 2.25rem;
+    text-align: left;
 }
 
+/* Styles for Application Used Section of Portofolio Post Page */
 
 .applicationsused {
+    background-color: white;
     box-sizing: border-box;
     width: auto;
-    background-color: white;
 }
 
-.applicationsused > h1 {
+.applicationsused h1 {
+    color: black;
     display: block;
-    text-align: center;
-    padding: 10px;
+    font-family: RalewayThin;
+    font-size: 2.25rem;
     margin: 0 auto;
     object-fit: fill;
-    font-family: RalewayRegular;
-    color: black;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
 }
-
 
 .appgallery {
-    white-space: pre-line;
-    overflow: auto;
-    display: flex;
     clear: both;
+    display: grid;
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-columns: repeat(3, 1fr);
     margin: 0 auto;
+    overflow: auto;
     text-align: center;
+    white-space: pre-line;
 }
 
-div.app {
-    width: auto;
-    padding: 10px;
-    margin: 10px auto;
+.app {
     float: left;
-    padding: 10px;
-    max-width: 250px;
     justify-content: center;
-}
-
-
-.application {
-    font-size: 2rem;
-}
-
-div.app img {
-    width: 45%;
-}
-
-div.return {
-    background-color: black;
-}
-
-div.return a {
-    font-size: 3rem;
-    margin: 10px;
-    font-family: RalewayRegular;
+    margin: 10px auto;
     padding: 10px;
-    display: inline-block;
-    color: white;
+    padding: 10px;
+    width: auto;
+}
+
+.app a {
     text-decoration: none;
 }
 
-div.return img {
+.application {
+    font-size: 1.2rem;
+}
+
+div.app img {
+    max-width: 80px;
+}
+
+/* Breakdown Gallery */
+
+.breakdown h1 {
+    color: black;
+    display: block;
+    margin: auto 0;
+    padding: 2rem;
     position: relative;
-    top: 25px;
-    right: 10px;
-    float: right;
-    width: 60px;
+    text-align: center;
+
 }
 
 .gallerybuttons {
     display: block;
-    text-align: center;
+    margin: auto 0;
+    padding: 10px;
     position: relative;
-    color: black;
+    text-align: center;
+
 }
 
 .rightbutton {
-    width: 5rem;
-    margin: 2rem 2rem;
-    height: 5rem;
     background-color: transparent;
-    color: white;
     border-radius: 50px;
-    border: 5px solid white;
-    
+    border: 5px solid black;
+    color: black;
+    width: 5rem;
 }
+
 .leftbutton {
-    width: 5rem;
-    margin: 2rem 2rem;
-    height: 5rem;
     background-color: transparent;
-    color: white;
     border-radius: 50px;
-    border: 5px solid white;
+    border: 5px solid black;
+    color: black;
+    width: 5rem;
 }
 
 .gallerydescription {
+    color: black;
+    font-family: RalewayRegular;
+    font-size: 1.65rem;
     padding: 10px;
     text-align: center;
-    color: white;
+    
+}
+
+.application {
+    color: black;
+    font-family: RalewayRegular;
+}
+
+video {
+    width: 50%;
+}
+
+/*!
+//..............................................................................................................................................
+//.....GGGGG........AAAAA.....LLL........LLL........EEEEEEEEEE..RRRRRRRRR...RYY.....YYY....... PPPPPPP......AAAAA.........GGGGG.....GGEEEEEEEE..
+//...GGGGGGGGG......AAAAA.....LLL........LLL........EEEEEEEEEE..RRRRRRRRRR..RYY.....YYY....... PPPPPPPP.....AAAAA.......GGGGGGGGG...GGEEEEEEEE..
+//..GGGGGGGGGG......AAAAA.....LLL........LLL........EEEEEEEEEE..RRRRRRRRRRR..YYY...YYY........ PPPPPPPPP....AAAAA......AGGGGGGGGG...GGEEEEEEEE..
+//..GGG....GGGG....AAA.AAA....LLL........LLL........EEE.........RRR.....RRR...YYY.YYY......... PP....PPP...AAA.AAA.....AGG....GGGG..GGE.........
+//.GGG......GG.....AAA.AAA....LLL........LLL........EEE.........RRR.....RRR...YYY.YYY......... PP....PPP...AAA.AAA....AAG......GG...GGE.........
+//.GGG.............AAA.AAA....LLL........LLL........EEEEEEEEEE..RRRRRRRRRRR....YYYYY.......... PPPPPPPPP...AAA.AAA....AAG...........GGEEEEEEEE..
+//.GGG...GGGGGG...AAA...AAA...LLL........LLL........EEEEEEEEEE..RRRRRRRRRR.....YYYYY.......... PPPPPPPP...PAA...AAA...AAG...GGGGGG..GGEEEEEEEE..
+//.GGG...GGGGGG...AAAAAAAAA...LLL........LLL........EEEEEEEEEE..RRRRRRRR........YYY........... PPPPPPP....PAAAAAAAA...AAG...GGGGGG..GGEEEEEEEE..
+//.GGG...GGGGGG...AAAAAAAAA...LLL........LLL........EEE.........RRR..RRRR.......YYY........... PP.........PAAAAAAAA...AAG...GGGGGG..GGE.........
+//..GGG.....GGG..AAAAAAAAAAA..LLL........LLL........EEE.........RRR...RRRR......YYY........... PP........PPAAAAAAAAA...AGG.....GGG..GGE.........
+//..GGGGGGGGGGG..AAA.....AAA..LLLLLLLLL..LLLLLLLLL..EEEEEEEEEE..RRR....RRR......YYY........... PP........PPA.....AAA...AGGGGGGGGGG..GGEEEEEEEE..
+//...GGGGGGGGG...AAA.....AAA..LLLLLLLLL..LLLLLLLLL..EEEEEEEEEE..RRR....RRRR.....YYY........... PP........PPA.....AAA....GGGGGGGGG...GGEEEEEEEE..
+//.....GGGGG....GAA.......AAA.LLLLLLLLL..LLLLLLLLL..EEEEEEEEEE..RRR.....RRRR....YYY........... PP.......PPP.......AAA.....GGGGG.....GGEEEEEEEE..
+//..............................................................................................................................................
+*/
+
+/*! Portfolio Gallery Navigation */
+
+div.portfolioanchor {
+    display: inline;
+}
+
+
+div.portfolioanchor ul li a {
+    border-radius: 50px;
+    border: 1px solid white;
+    color: #ffffff;
+    display: block;
+    font: 30px, RalewayRegular;
+    margin: 0 30px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/*! Gallery on Portfolio */
+
+.gallerycenter {
+    background-color: #cacaca;
+    display: grid;
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-columns: repeat(2, 1fr);
+    text-decoration: none;
+    white-space: normal;
+}
+
+div.gallery {
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    white-space: normal;
+}
+
+div.gallery a {
+    text-decoration: none;
+}
+
+div.gallery img {
+    max-width: 100%;
+}
+
+/*! Gallery Description/Date  */
+
+.featdescription {
+    color:  black;
+    font-family: RalewayExtraBold;
+    font-size: 1.25rem;
+    margin: 0 5px;
+    overflow: hidden;
+    text-align: left;
+}
+
+
+.date {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    margin: 5px 5px;
+    text-align: left;
+}
+
+
+/*! Gallery on Homepage */
+
+h1.portfolio {
+    color: black;
+    display: block;
+    font-family: RalewayThin;
     font-size: 3rem;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+   
 }
 
-d1.border {
-    background-color: black;
+h2 {
+    display: block;
+    font-family: RalewayThin;
+    font-size: 30px;
+    margin: 10px;
+    padding: 10px 0;
+    position: relative;    
+    text-align: center;
 }
 
-.breakdown {
-    background-color: black;
+/* Category Tags */
+
+.category {
+    align-items: center;
+    position: relative;
+    text-align: center;
 }
 
-.gradient {
-    padding: 5px;
-    background-color: black;
-}
-
-div.featdescription a {
+.category a {
     color: black;
     text-decoration: none;
+}
+
+.category img {
+    margin: 0 auto;
+    padding: 10px 0;
+    vertical-align: middle;
+    width: 20%;
+}
+
+.category p {
+    bottom: -0.3rem;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px 0;
+    position: relative;
+    text-align: center;
+}
+
+
+/*! Return to Top */
+
+.return {
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.return a {
+    display: block;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.return img {
+    bottom: -0.50rem;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    vertical-align: middle;
+    width: 20%;
+}
+
+.return p {
+    bottom: -0.3rem;
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
 }

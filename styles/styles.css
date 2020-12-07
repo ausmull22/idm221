@@ -1,13 +1,35 @@
 
 /*! Header */
-header {
-    padding: 10px;
-    background-color: black;
+body {
+    width: fit-content;
 }
 
-nav {
-    box-sizing: border-box;
+header {
+    width: auto;
 }
+
+
+/*! Banner (+Text) */
+
+.banner {
+    position: relative;
+    text-align: center;
+}
+
+.banner img {
+    width: 100%;
+}
+
+
+.centered {
+    font-family: RalewayExtraBold;
+    font-size: 3.30rem;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 /*! Dividers */
 
@@ -20,12 +42,34 @@ hr.dashed {
     clear: both;
 }
 
-/*! Font */
+/*! //...................................................
+//.FFFFFFFFF......OOOO......NNN.....NNN.NTTTTTTTTTT..
+//.FFFFFFFFF....OOOOOOOO....NNNN....NNN.NTTTTTTTTTT..
+//.FFFFFFFFF...OOOOOOOOOO...NNNNN...NNN.NTTTTTTTTTT..
+//.FFF.........OOO....OOO...NNNNN...NNN.....TTT......
+//.FFF........OOO......OOO..NNNNNN..NNN.....TTT......
+//.FFFFFFFF...OOO......OOO..NNN.NN..NNN.....TTT......
+//.FFFFFFFF...OOO......OOO..NNN.NNN.NNN.....TTT......
+//.FFFFFFFF...OOO......OOO..NNN..NN.NNN.....TTT......
+//.FFF........OOO......OOO..NNN..NNNNNN.....TTT......
+//.FFF.........OOO....OOO...NNN...NNNNN.....TTT......
+//.FFF.........OOOOOOOOOO...NNN...NNNNN.....TTT......
+//.FFF..........OOOOOOOO....NNN....NNNN.....TTT......
+//.FFF............OOOO......NNN.....NNN.....TTT......
+//................................................... */
 
 @font-face {
     font-family: "RalewayRegular";
     src: url("../fonts/Raleway-Regular.ttf") format("truetype");
 }
+
+
+
+@font-face {
+    font-family: "RalewaySemiBold";
+    src: url("../fonts/Raleway-SemiBold.ttf") format("truetype");
+}
+
 
 @font-face {
     font-family: "RalewayThin";
@@ -37,441 +81,340 @@ hr.dashed {
     src: url("../fonts/Raleway-ExtraBold.ttf") format("truetype");
 }
 
-@font-face {
-    font-family: "DenseLetters";
-    src: url("../fonts/DenseLetters.otf") format("opentype");
-}
 
 
-@font-face {
-    font-family: "Lulusma";
-    src: url("../fonts/Lulusma.otf") format("opentype");
-}
-
-@font-face {
-    font-family: "LulusmaBold";
-    src: url("../fonts/LulusmaBold.otf") format("opentype");
-}
-
-/*! Navigation */
+/*! Logo */
 
 #logo {
     display: block;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-    width: 50%;
-}
-
-nav {
-    text-align: center;
-    list-style: none;
-}
-
-nav ul {
-    display: inline-block;
-}
-
-nav ul li {
-    list-style-type: none;
-    float: left;  
-}
-
-nav ul li a {
-    font: 1rem, RalewayRegular;
-    padding: 10px;
-    margin: 0 30px;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 40px;
-    display: block;
-}
-
-p {
-    font: 1rem, RalewayRegular;
-}
-
-nav > ul > li:hover {
-    color: lightblue;
-    background-color: black;
+    text-align: left;
+    width: 60%;
 }
 
 
-/*! Footer */
+/*! 
+//.............................................................................
+//.FFFFFFFFF......OOOO..........OOOO.....OTTTTTTTTTT.EEEEEEEEEE..RRRRRRRRR.....
+//.FFFFFFFFF....OOOOOOOO......OOOOOOOO...OTTTTTTTTTT.EEEEEEEEEE..RRRRRRRRRR....
+//.FFFFFFFFF...OOOOOOOOOO....OOOOOOOOOO..OTTTTTTTTTT.EEEEEEEEEE..RRRRRRRRRRR...
+//.FFF.........OOO....OOO....OOO....OOO......TTT.....EEE.........RRR.....RRR...
+//.FFF........OOO......OOO..OOO......OOO.....TTT.....EEE.........RRR.....RRR...
+//.FFFFFFFF...OOO......OOO..OOO......OOO.....TTT.....EEEEEEEEEE..RRRRRRRRRRR...
+//.FFFFFFFF...OOO......OOO..OOO......OOO.....TTT.....EEEEEEEEEE..RRRRRRRRRR....
+//.FFFFFFFF...OOO......OOO..OOO......OOO.....TTT.....EEEEEEEEEE..RRRRRRRR......
+//.FFF........OOO......OOO..OOO......OOO.....TTT.....EEE.........RRR..RRRR.....
+//.FFF.........OOO....OOO....OOO....OOO......TTT.....EEE.........RRR...RRRR....
+//.FFF.........OOOOOOOOOO....OOOOOOOOOO......TTT.....EEEEEEEEEE..RRR....RRR....
+//.FFF..........OOOOOOOO......OOOOOOOO.......TTT.....EEEEEEEEEE..RRR....RRRR...
+//.FFF............OOOO..........OOOO.........TTT.....EEEEEEEEEE..RRR.....RRRR..
+//............................................................................. */
 
 footer {
-    background-color: black;
-    font: 1rem, arial; 
+    background-color: rgb(33, 43, 65);
     color: #ffffff;
+    font: 1rem, arial; 
     list-style: none;
+    padding: 10px;
     text-align: center;
 }
 
 
-.socialmedia > a {
-    width: 10%;
-    margin: 30px;
-    padding: 10px;
-    list-style-type: none;
+.socialmedia a img {
     display: inline-block;
+    list-style-type: none;
+    padding: 10px;
+    width: 3rem;
 }
 
-.foot > ul > li > a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 20px;
-    
-}
-
-/*! h1 */
+/*! //................................................................................................
+//.HHH.....HHH..EEEEEEEEEE.....AAAAA.....DDDDDDDD.....III..NNN.....NNN......GGGGG.......SSSSSS....
+//.HHH.....HHH..EEEEEEEEEE.....AAAAA.....DDDDDDDDDD...III..NNNN....NNN....GGGGGGGGG....SSSSSSSS...
+//.HHH.....HHH..EEEEEEEEEE.....AAAAA.....DDDDDDDDDD...III..NNNNN...NNN...GGGGGGGGGG...SSSSSSSSSS..
+//.HHH.....HHH..EEE...........AAA.AAA....DDD....DDDD..III..NNNNN...NNN...GGG....GGGG..SSS....SSS..
+//.HHH.....HHH..EEE...........AAA.AAA....DDD.....DDD..III..NNNNNN..NNN..GGG......GG...SSS.........
+//.HHHHHHHHHHH..EEEEEEEEEE....AAA.AAA....DDD.....DDD..III..NNN.NN..NNN..GGG...........SSSSSSS.....
+//.HHHHHHHHHHH..EEEEEEEEEE...AAA...AAA...DDD.....DDD..III..NNN.NNN.NNN..GGG...GGGGGG...SSSSSSSS...
+//.HHHHHHHHHHH..EEEEEEEEEE...AAAAAAAAA...DDD.....DDD..III..NNN..NN.NNN..GGG...GGGGGG.....SSSSSSS..
+//.HHH.....HHH..EEE..........AAAAAAAAA...DDD.....DDD..III..NNN..NNNNNN..GGG...GGGGGG.........SSS..
+//.HHH.....HHH..EEE.........AAAAAAAAAAA..DDD....DDDD..III..NNN...NNNNN...GGG.....GGG..SSS....SSS..
+//.HHH.....HHH..EEEEEEEEEE..AAA.....AAA..DDDDDDDDDD...III..NNN...NNNNN...GGGGGGGGGGG..SSSSSSSSSS..
+//.HHH.....HHH..EEEEEEEEEE..AAA.....AAA..DDDDDDDDDD...III..NNN....NNNN....GGGGGGGGG....SSSSSSSS...
+//.HHH.....HHH..EEEEEEEEEE.EAA.......AAA.DDDDDDDD.....III..NNN.....NNN......GGGGG.......SSSSSS....
+//................................................................................................ */
 
 h1 {
-    font-size: 3rem;
-    display: inline-block;
+    color: black;
     font-family: RalewayRegular;
-    color: #ffffff;
+    font-size: 3rem;
     text-align: left;
+    text-transform: uppercase;
 }
+
+
+h2 {
+    color: black;
+    font-family: RalewayRegular;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 
 body {
     font-family: 'Arial', serif;
 }
 
+/*! Paragraphs */
+
+
+p {
+    font-family: RalewayRegular;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    padding: 2rem;
+    text-align: left;
+}
+
+/*! //........................................................................
+//.III..MMMM.....MMMM.....AAAAA.........GGGGG.....EEEEEEEEEE....SSSSSS....
+//.III..MMMM.....MMMM.....AAAAA.......GGGGGGGGG...EEEEEEEEEE...SSSSSSSS...
+//.III..MMMMM...MMMMM.....AAAAA......GGGGGGGGGG...EEEEEEEEEE..SSSSSSSSSS..
+//.III..MMMMM...MMMMM....AAA.AAA.....GGG....GGGG..EEE.........SSS....SSS..
+//.III..MMMMM...MMMMM....AAA.AAA....GGG......GG...EEE.........SSS.........
+//.III..MMM.MM.MM.MMM....AAA.AAA....GGG...........EEEEEEEEEE..SSSSSSS.....
+//.III..MMM.MM.MM.MMM...AAA...AAA...GGG...GGGGGG..EEEEEEEEEE...SSSSSSSS...
+//.III..MMM.MM.MM.MMM...AAAAAAAAA...GGG...GGGGGG..EEEEEEEEEE.....SSSSSSS..
+//.III..MMM.MM.MM.MMM...AAAAAAAAA...GGG...GGGGGG..EEE................SSS..
+//.III..MMM..MMM..MMM..AAAAAAAAAAA...GGG.....GGG..EEE.........SSS....SSS..
+//.III..MMM..MMM..MMM..AAA.....AAA...GGGGGGGGGGG..EEEEEEEEEE..SSSSSSSSSS..
+//.III..MMM..MMM..MMM..AAA.....AAA....GGGGGGGGG...EEEEEEEEEE...SSSSSSSS...
+//.III..MMM...M...MMM.MAA.......AAA.....GGGGG.....EEEEEEEEEE....SSSSSS....
+//........................................................................ */
+
 
 img {
-    width: 100%;
     height: auto;
+    width: fit-content;
 }
+
+/*!
+//........................................................................................
+//.BBBBBBBBB....UUU.....UUU.UTTTTTTTTTTTTTTTTTTTTT.....OOOO......NNN.....NNN....SSSSSS....
+//.BBBBBBBBBB...UUU.....UUU.UTTTTTTTTTTTTTTTTTTTTT...OOOOOOOO....NNNN....NNN...SSSSSSSS...
+//.BBBBBBBBBBB..UUU.....UUU.UTTTTTTTTTTTTTTTTTTTTT..OOOOOOOOOO...NNNNN...NNN..SSSSSSSSSS..
+//.BBB.....BBB..UUU.....UUU.....TTT........TTT......OOO....OOO...NNNNN...NNN..SSS....SSS..
+//.BBB.....BBB..UUU.....UUU.....TTT........TTT.....OOO......OOO..NNNNNN..NNN..SSS.........
+//.BBBBBBBBBB...UUU.....UUU.....TTT........TTT.....OOO......OOO..NNN.NN..NNN..SSSSSSS.....
+//.BBBBBBBBB....UUU.....UUU.....TTT........TTT.....OOO......OOO..NNN.NNN.NNN...SSSSSSSS...
+//.BBBBBBBBBB...UUU.....UUU.....TTT........TTT.....OOO......OOO..NNN..NN.NNN.....SSSSSSS..
+//.BBB.....BBB..UUU.....UUU.....TTT........TTT.....OOO......OOO..NNN..NNNNNN.........SSS..
+//.BBB.....BBB..UUUU...UUUU.....TTT........TTT......OOO....OOO...NNN...NNNNN..SSS....SSS..
+//.BBBBBBBBBBB...UUUUUUUUU......TTT........TTT......OOOOOOOOOO...NNN...NNNNN..SSSSSSSSSS..
+//.BBBBBBBBBB....UUUUUUUUU......TTT........TTT.......OOOOOOOO....NNN....NNNN...SSSSSSSS...
+//.BBBBBBBBB.......UUUUU........TTT........TTT.........OOOO......NNN.....NNN....SSSSSS....
+//........................................................................................
+*/
+
 
 button {
-    margin: 10px;
-    border: 2px solid black;
-    border-radius: 40px;
-    color: black;
-    padding: 10px;
     background-color: white;
+    border-radius: 40px;
+    border: 2px solid black;
+    color: black;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 1.5rem;
 }
 
 
-/*Who Am I Page*/
+/*Recent Project Secction*/
+
+.recent a {
+    text-decoration: none;
+}
+
+
+/*//.........................................................................................
+//.WWW....WWW....WWW.HHH.....HHH......OOOO..............AAAAA.....MMMM.....MMMM.......III..
+//.WWW....WWW....WWW.HHH.....HHH....OOOOOOOO............AAAAA.....MMMM.....MMMM.......III..
+//.WWW...WWWWW...WWW.HHH.....HHH...OOOOOOOOOO...........AAAAA.....MMMMM...MMMMM.......III..
+//..WWW..WW.WW..WWW..HHH.....HHH...OOO....OOO..........AAA.AAA....MMMMM...MMMMM.......III..
+//..WWW..WW.WW..WWW..HHH.....HHH..OOO......OOO.........AAA.AAA....MMMMM...MMMMM.......III..
+//..WWW.WWW.WWW.WWW..HHHHHHHHHHH..OOO......OOO.........AAA.AAA....MMM.MM.MM.MMM.......III..
+//..WWW.WWW.WWW.WWW..HHHHHHHHHHH..OOO......OOO........AAA...AAA...MMM.MM.MM.MMM.......III..
+//..WWW.WW...WW.WWW..HHHHHHHHHHH..OOO......OOO........AAAAAAAAA...MMM.MM.MM.MMM.......III..
+//..WWW.WW...WW.WWW..HHH.....HHH..OOO......OOO........AAAAAAAAA...MMM.MM.MM.MMM.......III..
+//...WWWWW...WWWWW...HHH.....HHH...OOO....OOO........AAAAAAAAAAA..MMM..MMM..MMM.......III..
+//...WWWWW...WWWWW...HHH.....HHH...OOOOOOOOOO........AAA.....AAA..MMM..MMM..MMM.......III..
+//...WWWW.....WWWW...HHH.....HHH....OOOOOOOO.........AAA.....AAA..MMM..MMM..MMM.......III..
+//...WWWW.....WWWW...HHH.....HHH......OOOO..........AAA.......AAA.MMM...M...MMM.......III..
+//.........................................................................................n*/
 
 
 .who {
+    background-color: white;
     box-sizing: border-box;
     display: inline-block;
-    background-color: white;
 }
 
-.who p {
-    font: 2rem, Arial;
-    text-align: center;
-    font-size: 2rem;
-}
 
 .who h1 {
-    display: block;
-    text-align: center;
-    padding: 20px;
-    margin: 0 auto;
-    position: relative;
-    top: 1rem;
-    object-fit: fill;
-    font-family: DenseLetters;
     color: black;
+    display: block;
+    font-family: RalewayExtraBold;
+    margin: 0 auto;
+    object-fit: fill;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    top: -1.75rem;
 }
 
 img.portrait {
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px black;
     clear: both;
-    width: 200px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 50%;
-    box-shadow: 5px 5px 5px black;
+    width: 200px;
 }
 
+/*! Comeback */
+
+
 div.group {
-    padding: 10px;
     margin: 0 20px;
 }
 
 
-/*! Featured on Homepage */
 
-.description {
-    background-color: white;
+/*
+//..............................................................................
+//...SSSSSS...STTTTTTTTTT.RRRRRRRRR....III..PPPPPPPP....EEEEEEEEEE....SSSSSS....
+//..SSSSSSSS..STTTTTTTTTT.RRRRRRRRRR...III..PPPPPPPPP...EEEEEEEEEE...SSSSSSSS...
+//.SSSSSSSSSS.STTTTTTTTTT.RRRRRRRRRRR..III..PPPPPPPPPP..EEEEEEEEEE..SSSSSSSSSS..
+//.SSS....SSS.....TTT.....RRR.....RRR..III..PPP....PPP..EEE.........SSS....SSS..
+//.SSS............TTT.....RRR.....RRR..III..PPP....PPP..EEE.........SSS.........
+//.SSSSSSS........TTT.....RRRRRRRRRRR..III..PPPPPPPPPP..EEEEEEEEEE..SSSSSSS.....
+//..SSSSSSSS......TTT.....RRRRRRRRRR...III..PPPPPPPPP...EEEEEEEEEE...SSSSSSSS...
+//....SSSSSSS.....TTT.....RRRRRRRR.....III..PPPPPPPP....EEEEEEEEEE.....SSSSSSS..
+//........SSS.....TTT.....RRR..RRRR....III..PPP.........EEE................SSS..
+//.SSS....SSS.....TTT.....RRR...RRRR...III..PPP.........EEE.........SSS....SSS..
+//.SSSSSSSSSS.....TTT.....RRR....RRR...III..PPP.........EEEEEEEEEE..SSSSSSSSSS..
+//..SSSSSSSS......TTT.....RRR....RRRR..III..PPP.........EEEEEEEEEE...SSSSSSSS...
+//...SSSSSS.......TTT.....RRR.....RRRR.III..PPP.........EEEEEEEEEE....SSSSSS....
+//..............................................................................
+*/
+
+
+.stripes {
+    background-color: black;
+    margin: 2rem 0;
+    padding: 2px;
 }
 
-.description > h2 {
-    font-family: LulusmaBold;
-    margin-bottom: -5rem;
+
+/*! //......................................................................................................................................................................
+//.RRRRRRRRR....EEEEEEEEEE......CCCC.....EEEEEEEEEE..NNN.....NNN.NTTTTTTTTTT......PPPPPPPP....RRRRRRRRR........OOOO...........JJJ..EEEEEEEEEE......CCCC....CTTTTTTTTTT..
+//.RRRRRRRRRR...EEEEEEEEEE....CCCCCCCC...EEEEEEEEEE..NNNN....NNN.NTTTTTTTTTT......PPPPPPPPP...RRRRRRRRRR.....OOOOOOOO.........JJJ..EEEEEEEEEE....CCCCCCCC..CTTTTTTTTTT..
+//.RRRRRRRRRRR..EEEEEEEEEE...CCCCCCCCC...EEEEEEEEEE..NNNNN...NNN.NTTTTTTTTTT......PPPPPPPPPP..RRRRRRRRRRR...OOOOOOOOOO........JJJ..EEEEEEEEEE...CCCCCCCCC..CTTTTTTTTTT..
+//.RRR.....RRR..EEE..........CCC...CCCC..EEE.........NNNNN...NNN.....TTT..........PPP....PPP..RRR.....RRR...OOO....OOO........JJJ..EEE..........CCC...CCCC.....TTT......
+//.RRR.....RRR..EEE.........CCC.....CC...EEE.........NNNNNN..NNN.....TTT..........PPP....PPP..RRR.....RRR..OOO......OOO.......JJJ..EEE.........CCC.....CC......TTT......
+//.RRRRRRRRRRR..EEEEEEEEEE..CCC..........EEEEEEEEEE..NNN.NN..NNN.....TTT..........PPPPPPPPPP..RRRRRRRRRRR..OOO......OOO.......JJJ..EEEEEEEEEE..CCC.............TTT......
+//.RRRRRRRRRR...EEEEEEEEEE..CCC..........EEEEEEEEEE..NNN.NNN.NNN.....TTT..........PPPPPPPPP...RRRRRRRRRR...OOO......OOO.......JJJ..EEEEEEEEEE..CCC.............TTT......
+//.RRRRRRRR.....EEEEEEEEEE..CCC..........EEEEEEEEEE..NNN..NN.NNN.....TTT..........PPPPPPPP....RRRRRRRR.....OOO......OOO.......JJJ..EEEEEEEEEE..CCC.............TTT......
+//.RRR..RRRR....EEE.........CCC.....CC...EEE.........NNN..NNNNNN.....TTT..........PPP.........RRR..RRRR....OOO......OOO.OJJ...JJJ..EEE.........CCC.....CC......TTT......
+//.RRR...RRRR...EEE..........CCC...CCCC..EEE.........NNN...NNNNN.....TTT..........PPP.........RRR...RRRR....OOO....OOO..OJJ...JJJ..EEE..........CCC...CCCC.....TTT......
+//.RRR....RRR...EEEEEEEEEE...CCCCCCCCC...EEEEEEEEEE..NNN...NNNNN.....TTT..........PPP.........RRR....RRR....OOOOOOOOOO..OJJJJJJJJ..EEEEEEEEEE...CCCCCCCCC......TTT......
+//.RRR....RRRR..EEEEEEEEEE....CCCCCCCC...EEEEEEEEEE..NNN....NNNN.....TTT..........PPP.........RRR....RRRR....OOOOOOOO....JJJJJJJ...EEEEEEEEEE....CCCCCCCC......TTT......
+//.RRR.....RRRR.EEEEEEEEEE......CCCC.....EEEEEEEEEE..NNN.....NNN.....TTT..........PPP.........RRR.....RRRR.....OOOO.......JJJJJ....EEEEEEEEEE......CCCC........TTT......
+//...................................................................................................................................................................... */
+
+.project a {
     color: black;
 }
 
-div.project img {
+div.topdescription {
+    background-color: white;
+    clear: both;
+    display: inline;
+    position: relative;
+}
+
+/*! Main Heading for Recent Project */
+
+
+.topdescription h3 {
+    align-items: center;
+    color: black;
+    font-family: RalewayRegular;
+    font-size: 2rem;
+    margin: auto 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/*! Subheading for Recent Project */
+
+
+.topdescription h4 {
+    align-items: center;
+    background-color: white;
+    font-family: RalewayRegular;
+    font-size: 1rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*! Scaling Recent Project Banner */
+
+
+.recent img {
+    width: 100%;
+}
+
+.icon img {
+    align-items: center;
+    display: block;
+    margin: auto 0;
+    position: relative;
+    text-align: center;
+    width: 20%;
+}
+
+
+div.featured img {
+    clear: both;
+}
+
+div.description img {
     object-fit: scale-down;
 }
 
-div.project p {
-    font-size: 2.25rem;
-    top: -2rem;
-    position: relative;
-    background-color: white;
-}
-
-/*! Gallery on Homepage */
-
-.gallerycenter {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    width: auto;
-}
-
-div.gallery {
-    margin: 10px;
-    background-color: white;
-    white-space: normal;
-    box-shadow: rgba(0, 0, 0, 0.466) 10px 10px 5px;
-}
-
-div.gallery img {
-    margin: 10px;
-    width: 95%;
-}
-
-/*! Gallery on Tages (Applications Used for Portfolio) */
-
-div.date {
-    color: black;
-    padding: 10px 0px;
-    text-align: left;
-    margin: 0 10px;
-    font-size: 30px;
-    font-family: Lulusma;
-}
-
-div.featdescription {
-    color:  black;
-    font-size: 30px;
-    margin: 10px;
-    padding: 0 0 -5px 0;
-    text-align: left;
-    font-family: LulusmaBold;
-}
-
-/*! Portfolio Gallery Navigation */
-
-div.portfolioanchor {
-    display: inline;
-}
-
-
-div.portfolioanchor ul li a {
-    font: 30px, RalewayRegular;
-    padding: 10px;
-    margin: 0 30px;
-    text-decoration: none;
-    color: #ffffff;
-    display: block;
-    border: 1px solid white;
-    border-radius: 50px;
-}
-
-
-/*! Gallery on Portfolio */
-
-h1.portfolio {
-    text-transform: uppercase;
-    text-align: center;
-    font-family: DenseLetters;
-    color: black;
-    display: block;
-    font-size: 5rem;
-    padding: 20px;
-    margin: 0 auto;
-    position: relative;
-   
-}
-
-h2 {
-    font-family: RalewayExtraBold;
-    font-size: 50px;
-    margin: 10px;
-    padding: 10px 0;
-    color: white;
-    display: block;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    
-}
-
-h2 #title {
-    font-family: RalewayRegular;
-    font-size: 50px;
-    margin: 10px;
-    padding: 10px 0;
-    color: white;
-    display: inline-block; 
-    text-align: center;
-}
-
-/*! Portfolio Anchor*/
-
-div.portfolioanchor {
-    margin: 0 auto;
-    text-align: left;
-    list-style: inside;
-
-}
-
-div.portfolioanchor ul {
-    display: block;
-    text-align: left;
-}
-
-div.portfolioanchor ul li {
-    list-style-type: none;
-    margin: 10px;
-    text-decoration: none;
-}
-    
-div.portfolioanchor ul li a {
-    font-family: RalewayRegular;
-    padding: 10px;
-    color: black;
-    font-size: 30px;
-    display: block;
-}
 
 /*! Containers */
 
-.separators {
-    height: 75px;
-    position: relative;
-}
-
-
-.container {
-    height: 200px;
-    position: relative;
-}
 
 
 .buttoncontainer {
-    margin: auto 0;
     height: 200px;
+    margin: auto 0;
     position: relative;
 }
 
 .center {
+    box-sizing: border-box;
     display: inline-block;
     justify-content: center;
-    box-sizing: border-box;
-    position: relative;
     left: 25%;
-}
-
-/*Lines */
-
-.linebothside {
-    text-align: left;
-    display: block;
-    grid-template-columns: 2fr auto 2fr;
-    grid-template-rows: 20px 0;
-    grid-gap: 20px;    
-}
-
-.linebothside:after {
-    content: " ";
-    display: block;
-    border-bottom: 3px solid #ffffff;
-}
-
-
-h2 #title {
-    text-align: center;
-}
-
-/*Contact */
-
-#portfolio {
-    background-color: white;
- }
-
-
-#anchors {
-    background-color: rgb(255, 210, 63);
-}
-
-.ANIM {
-    background-color: #ee4266;
-}
-
-.IDM {
-    background-color: #0EAD69;
-}
-
-.PHOTO {
-    background-color: #3BCEAC;
-}
-
-
-.navigation {
-    background-color: black;
-}
-
-
-.featuredproject {
-    background-color: #ee4266;
-}
-
-.contact {
-    display: grid;
-    clear: both;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(10px, auto);
-    margin: 0 15rem;
-
-}
-
-
-.phonenumber img {
-    width: 5rem;
-}
-
-.phonenumber p {
-    font-size: 2rem;
     position: relative;
-    top: -1.5rem;
 }
 
-.animation {
-    display: block;
-    background-color: #ee4266;
-}
 
-.animation p {
-    margin: 0;
-    display: inline;
-    position: relative;
-    font-family: LulusmaBold;
-    top: -20px;
+#whitevariation {
     color: white;
-    font-size: 4rem;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
 }
-
-.animation img {
-    margin: 10px;
-    filter: invert();
-    width: 5rem;
-    height: auto;
-}
-

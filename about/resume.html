@@ -1,209 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Resume - austinMULLIN</title>
     <meta charset="UTF-8">
-    <title>Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/normalize.css" />
     <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/stripes.css" />
     <link rel="stylesheet" href="../styles/resume.css" />
-    <link rel="stylesheet" href="../styles/portfoliopage.css" />
+    <link rel="stylesheet" href="../styles/dropdown.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <!-- Header -->
+<body>
 <header>
     <div class="container">
-        <div>
-            <img id = "logo" src="../images/logos/logowhite.png" alt="Austin Mullin" title="Yup, that's my name."/>
-        </div>
         <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../portfolio/portfoliogallery.html">Portfolio</a></li>
-                <li><a href="../about/aboutme.html">About Me</a></li>
-                <li><a href="../about/resume.html">Resume</a></li>
-            </ul>
+            <div class="topnav">
+                <a href="../index.html" class="active"><img id = "logo" src="../images/logos/logowhite.png" alt="Austin Mullin" title="Yup, that's my name."/></a>
+
+                <div id="myLinks">
+                    <a href="../index.html">Home</a>
+                    <a href="../portfolio/portfoliogallery.html">Portfolio</a>
+                    <a href="../about/aboutme.html">About Me</a>
+                    <a href="../about/resume.html">Resume</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+
+                <script>
+                    function myFunction() {
+                    var x = document.getElementById("myLinks");
+                    if (x.style.display === "block") {
+                      x.style.display = "none";
+                    } else {
+                      x.style.display = "block";
+                    }
+                  }
+                </script>
+            </div>
         </nav>
     </div>
 </header>
-<body>
-    <div>
-        <img src="../images/testimage.jpg">
-        <img class= "portrait" id="resume" src="../images/portraits/selfie.jpg" alt="Austin in A Car" title="Austin in a Car"/>
-    </div>
-    <h1 class="resumetop">Austin Mullin</h1>
-    <h2 class="resumetop">Philadelphia, PA</h2>
 
-    <div id="education" class= "resumesection">
-        <img src="../images/resume/education.png" alt="education" title="education"/>
-        <h2>Education</h2>
+<div class="banner">
+    <img src="../images/banners/resume.jpg" alt="banner">
+    <img class= "portrait" id="resume" src="../images/portraits/selfie.jpg" alt="selfie"/>
+</div>
+
+<h1 class="resumetop">Austin Mullin</h1>
+<h2 class="resumetop">Philadelphia, PA</h2>
+<h2>Education</h2>
+
+<div class="section">
+    <p>Drexel Unviersity - Philadelphia, PA</p>
+    <p><i>Bachelor of Science</i></p>
+    <p>Major: Entertainment and Arts Management</p>
+    <p>Minor: Animation and Visual Effects</p>
+    <p>Minor: Business Administration</p>
+    <p>Cumulative GPA: 3.66</p>
+    <p>Anticipated Graduation: June 2022</p>
+</div>
+
+<h2>Skills</h2>
+<div class="appgallery">
+    <div class= "app">
+        <a target="self" href="/portfolio/portfoliogallery.html">
+            <img src="../images/resume/skills/timemanagement.png" alt="Halfpenny">
+        </a>
+        <div class= "application">Time-Management</div>
     </div>
-    <div class="section">
-        <p>Drexel Unviersity - Philadelphia, PA</p>
-        <p><i>Bachelor of Science</i></p>
-        <p>Major: Entertainment and Arts Management</p>
-        <p>Minor: Animation and Visual Effects</p>
-        <p>Minor: Business Administration</p>
-        <p>Cumulative GPA: 3.66</p>
-        <p>Anticipated Graduation: June 2022</p>
+
+    <div class= "app">
+        <a target="self" href="/portfolio/portfoliogallery.html">
+            <img src="../images/resume/skills/socialmedia.png" alt="Halfpenny">
+        </a>
+        <div class= "application">Social Media Communication</div>
     </div>
-    
-    <div id="skills" class= "resumesection">
-        <img src="../images/resume/skills.png" alt="education" title="education"/>
-        <h2>Skills</h2>
+
+    <div class= "app">
+        <a target="_blank" href="/portfolio/portfoliogallery.html">
+            <img src="../images/resume/skills/microsoftoffice.png" alt="Halfpenny">
+        </a>
+        <div class= "application">Microsoft Office Suite</div>
     </div>
-    <div class="section">
-        <ul class= "columnlist">
-            <li>Time-Management</li>
-            <li>Social Media Communication</li>
-            <li>Adobe Creative Suite</li>
-            <li>Microsoft Office Suite</li>
-            <li>Openness</li>
-            <li>Teamwork Skills</li>
-            <li>Problem Solving</li>
-            <li>Problem Solving</li>
+
+    <div class= "app">
+        <a target="self" href="/portfolio/portfoliogallery.html">
+            <img src="../images/resume/skills/adobecreativecloud.png" alt="Halfpenny">
+        </a>
+        <div class= "application">Adobe Creative Suite</div>
+    </div>
+
+    <div class= "app">
+        <a target="self" href="/portfolio/portfoliogallery.html">
+            <img src="../images/resume/skills/openness.png" alt="Halfpenny">
+        </a>
+        <div class= "application">Openness</div>
+    </div>
+
+    <div class= "app">
+        <a target="_blank" href="/portfolio/portfoliogallery.html">
+            <img src="../images/resume/skills/teamwork.png" alt="Halfpenny">
+        </a>
+        <div class= "application">Teamwork Skills</div>
+    </div>
+</div>
+
+<h2>Technical Skills</h2>
+    <div class="appgallery">
+        <div class= "app">
+            <a target="self" href="/portfolio/portfoliogallery.html">
+                <img src="../images/apps/substance.png" alt="substance Painter">
+            </a>
+            <div class= "application">Substance Painter</div>
+        </div>
+
+        <div class= "app">
+            <a target="self" href="/portfolio/portfoliogallery.html">
+                <img src="../images/apps/photoshop.png" alt="photoshop">
+            </a>
+            <div class= "application">Adobe Photoshop</div>
+        </div>
+
+        <div class= "app">
+            <a target="_blank" href="/portfolio/portfoliogallery.html">
+                <img src="../images/apps/davinci.png" alt="davinci">
+            </a>
+            <div class= "application">DaVinci Resolve</div>
+        </div>
+
+        <div class= "app">
+            <a target="self" href="/portfolio/portfoliogallery.html">
+                <img src="../images/apps/adobexd.png" alt="adobexd">
+            </a>
+            <div class= "application">AdobeXD</div>
+        </div>
+
+        <div class= "app">
+            <a target="self" href="/portfolio/portfoliogallery.html">
+                <img src="../images/apps/aftereffects.png" alt="aftereffects">
+            </a>
+            <div class= "application">Adobe AfterEffects</div>
+        </div>
+
+        <div class= "app">
+            <a target="_blank" href="/portfolio/portfoliogallery.html">
+                <img src="../images/apps/invision.png" alt="invision">
+            </a>
+            <div class= "application">Invision Sutdio</div>
+        </div>
+    </div>
+
+<h2>Recent Coursework</h2>
+
+
+    <div class="appgallery">
+        <div class= "app">
+            <a target="_blank" href="/portfolio/portfoliogallery.html">
+                <img src="../images/courses/technqiuesofspeaking.png" alt="Halfpenny">
+            </a>
+            <div class= "application">Techniques Of Speaking</div>
+        </div>
+
+        <div class= "app">
+            <a target="_blank" href="/portfolio/portfoliogallery.html">
+                <img src="../images/courses/principlesofcommunication.png" alt="Halfpenny">
+            </a>
+            <div class= "application">Principles of Communication</div>
+        </div>
+
+        <div class= "app">
+            <a target="_blank" href="/portfolio/portfoliogallery.html">
+                <img src="../images/courses/overviewofdigitalmedia.png" alt="Halfpenny">
+            </a>
+            <div class= "application">Overview of Digtial Media</div>
+        </div>
+
+        <div class= "app">
+            <a target="_blank" href="/portfolio/portfoliogallery.html">
+                <img src="../images/courses/cgi.png" alt="cgi">
+            </a>
+            <div class= "application">Computer Graphics Imagery I&II</div>
+        </div>
+
+        <div class= "app">
+            <a target="_blank" href="/portfolio/portfoliogallery.html">
+                <img src="../images/courses/cinematography.png" alt="communication">
+            </a>
+            <div class= "application">Principles of Communication</div>
+        </div>
+
+        <div class= "app">
+            <a target="_blank" href="/portfolio/portfoliogallery.html">
+                <img src="../images/courses/entertainmentpromo.png" alt="Halfpenny">
+            </a>
+            <div class= "application">Promotions & Branding</div>
+        </div>
+    </div>
+
+       
+<h2>Recent Experience</h2>
+
+<div>
+    <div class="experiencetitle">
+        <h2>Media Coordinator- Drexel Animation Club</h2>
+        <h3>June 2016-Present</h3>
+        <ul>
+            <li>Taught features in Adobe Animate, and Autodesk Maya to 20+ college Freshmen and Sophomores through self-built exercises</li>
+            <li>Responsible for handling events on social media sites, including posting announcements for upcoming meetings and events.</li>
         </ul>
     </div>
-    <div id="technicalskills" class="resumesection">
-        <img src="../images/resume/technicalskills.png" alt="education" title="education"/>
-        <h2>Technical Skills</h2>
+
+    <div class="experiencetitle">
+        <h2>Digital Media Manager - Halfpenny Management</h2>
+        <h3>June 2016-Present</h3>
+        <ul>
+            <li>Redesigned website, allowing users to have an easier experience exploring different real-estate properties.</li>
+            <li>Responsible for disposing confidential documents that no longer serve purpose to the company.</li>
+        </ul> 
     </div>
-    <div class="section">
-        <div class="appgallery">
-            <div class= "app">
-                <a target="self" href="/portfolio/portfoliogallery.html">
-                    <img src="../images/apps/substance.png" alt="Halfpenny">
-                </a>
-                <div class= "application">Substance Painter</div>
-            </div>
-
-            <div class= "app">
-                <a target="self" href="/portfolio/portfoliogallery.html">
-                    <img src="../images/apps/photoshop.png" alt="Halfpenny">
-                </a>
-                <div class= "application">Adobe photoshop</div>
-            </div>
-
-            <div class= "app">
-                <a target="_blank" href="/portfolio/portfoliogallery.html">
-                    <img src="../images/apps/davinci.png" alt="Halfpenny">
-                </a>
-                <div class= "application">DaVinci Resolve</div>
-            </div>
-
-            <div class= "app">
-                <a target="_blank" href="/portfolio/portfoliogallery.html">
-                    <img src="../images/apps/adobexd.png" alt="Halfpenny">
-                </a>
-                <div class= "application">Adobe XD</div>
-            </div>
-
-            <div class= "app">
-                <a target="_blank" href="/portfolio/portfoliogallery.html">
-                    <img src="../images/apps/maya.png" alt="Halfpenny">
-                </a>
-                <div class= "application">Autodesk Maya</div>
-            </div>
-        </div>
+   
+    <div class="experiencetitle">
+        <h2>Student Volunteer - Old Pine St Presbyerian Church</h2>
+        <h3>June 2016-Present</h3>
+        <ul>
+            <li>Prepared dishes in soup-kitchen for senior citizens in a team effort</li>
+            <li>Organized Bingo Events that consisted of 40+ senior citizens</li>
+        </ul>
     </div>
-    <div id="relevantcoursework" class="resumesection">
-        <img src="../images/resume/education.png" alt="education" title="education"/>
-        <h2>Relevant Coursework</h2>
-    </div>
-    <div class="section">
-        <div class="appgallery">
-            <div class= "app">
-                <a target="_blank" href="/portfolio/portfoliogallery.html">
-                    <img src="../images/courses/technqiuesofspeaking.png" alt="Halfpenny">
-                </a>
-                <div class= "application">Techniques of Speaking</div>
-            </div>
+</div>
 
-            <div class= "app">
-                <a target="_blank" href="/portfolio/portfoliogallery.html">
-                    <img src="../images/courses/principlesofcommunication.png" alt="Halfpenny">
-                </a>
-                <div class= "application">Principles of Communication</div>
-            </div>
-
-            <div class= "app">
-                <a target="_blank" href="/portfolio/portfoliogallery.html">
-                    <img src="../images/courses/overviewofdigitalmedia.png" alt="Halfpenny">
-                </a>
-                <div class= "application">Overveiw of Digital Media</div>
-            </div>
-
-            <div class= "app">
-                <a target="_blank" href="/portfolio/portfoliogallery.html">
-                    <img src="../images/courses/entertainmentpromo.png" alt="Halfpenny">
-                </a>
-                <div class= "application">Entertainment Promotion and Branding</div>
-            </div>
+    <footer>
+        <div class = "socialmedia">
+            <a href="https://500px.com/p/ausmullin?view=photos"><img src="../images/socialmedia/500px.png" alt="500px"></a>
+            <a href="https://www.linkedin.com/in/austinmullin/"><img src="../images/socialmedia/linkedin.png" alt="linkedin"></a>
+            <a href="https://medium.com/@ausmullin"><img  src="../images/socialmedia/medium.png" alt="medium"></a>
         </div>
-        <div class="appgallery">
-            <div class= "app">
-                <a target="_blank" href="/portfolio/portfoliogallery.html">
-                    <img src="../images/courses/marketing.png" alt="Halfpenny">
-                </a>
-                <div class= "application">Introduction to Marketing </div>
-            </div>
-
-            <div class= "app">
-                <a target="_blank" href="/portfolio/portfoliogallery.html">
-                    <img src="../images/courses/webdesign.png" alt="Halfpenny">
-                </a>
-                <div class= "application">Web Design I</div>
-            </div>
-
-            <div class= "app">
-                <a target="_blank" href="/portfolio/portfoliogallery.html">
-                    <img src="../images/courses/cgi.png" alt="Halfpenny">
-                </a>
-                <div class= "application">Computer Graphics Imagery I&II</div>
-            </div>
-
-            <div class= "app">
-                <a target="_blank" href="/portfolio/portfoliogallery.html">
-                    <img src="../images/courses/cinematography.png" alt="Halfpenny">
-                </a>
-                <div class= "application">Basic Cinematography</div>
-            </div>
-        </div>
-    </div>
-    <div id="relevantexperience" class="resumesection">
-        <img src="../images/resume/relevantexperience.png" alt="education" title="education"/>
-        <h2>Relevant Experience</h2>
-    </div>
-    <div class="section">
-        <div class="experiencetitle">
-            <h2>Media Coordinator- Drexel Animation Club</h2>
-            <h3>June 2016-Present</h3>
-            <ul>
-                <li>Taught features in Adobe Animate, and Autodesk Maya to 20+ college Freshmen and Sophomores through self-built exercises</li>
-                <li>Responsible for handling events on social media sites, including posting announcements for upcoming meetings and events.</li>
-            </ul>
-        </div>
-        
-        <div class="experiencetitle">
-            <h2>Digital Media Manager - Halfpenny Management</h2>
-            <h3>June 2016-Present</h3>
-            <ul>
-                <li>Redesigned website, allowing users to have an easier experience exploring different real-estate properties.</li>
-                <li>Responsible for disposing confidential documents that no longer serve purpose to the company.</li>
-            </ul> 
-        </div>
-       
-        <div class="experiencetitle">
-            <h2>Student Volunteer - Old Pine St Presbyerian Church</h2>
-            <h3>June 2016-Present</h3>
-            <ul>
-                <li>Prepared dishes in soup-kitchen for senior citizens in a team effort</li>
-                <li>Organized Bingo Events that consisted of 40+ senior citizens</li>
-            </ul>
-        </div>
-        
-    </div>  
-    <div class="return">
-        <a target="_blank" href="../portfolio/portfoliogallery.html">Download PDF of Resume
-        </a>
-        <img src="../images/button/rightarrow.png" alt="">
-    </div>
+    </footer>
 </body>

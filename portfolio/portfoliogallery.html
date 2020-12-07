@@ -2,185 +2,185 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - austinMULLIN</title>
     <link rel="stylesheet" href="../styles/normalize.css" />
     <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="stylesheet" href="../styles/portfoliopage.css" />
-    <style>
-        body {
-            background-color: rgb(255, 210, 63);
-        }
-    </style>
+    <link rel="stylesheet" href="../styles/dropdown.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 <!-- Header -->
     <!-- Navigation System -->
     <header>
         <div class="container">
-            <div>
-                <img id = "logo" src="../images/logos/logowhite.png" alt="Austin Mullin" title="Yup, that's my name."/>
-            </div>
             <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../portfolio/portfoliogallery.html">Portfolio</a></li>
-                    <li><a href="../about/aboutme.html">About Me</a></li>
-                    <li><a href="../about/resume.html">Resume</a></li>
-                </ul>
+                <div class="topnav">
+                    <a href="../index.html" class="active"><img id = "logo" src="../images/logos/logowhite.png" alt="Austin Mullin" title="Yup, that's my name."/></a>
+
+                    <div id="myLinks">
+                        <a href="../index.html">Home</a>
+                        <a href="../portfolio/portfoliogallery.html">Portfolio</a>
+                        <a href="../about/aboutme.html">About Me</a>
+                        <a href="../about/resume.html">Resume</a>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                      <i class="fa fa-bars"></i>
+                    </a>
+
+                    <script>
+                        function myFunction() {
+                        var x = document.getElementById("myLinks");
+                        if (x.style.display === "block") {
+                          x.style.display = "none";
+                        } else {
+                          x.style.display = "block";
+                        }
+                      }
+                    </script>
+                </div>
             </nav>
         </div>
     </header>
 <!--Navigation for Portfolio -->
     <main>
-        <h1 class="portfolio">Portfolio</h1>
-        <div class="gradient"></div>
+        <div class="banner">
+            <img src="../images/banners/portfolio.png" alt="banner">
+            <div class="centered">PORTFOLIO</div>
+        </div>
         <div class="section" id="anchors">
-            <div class="appgallery" id="portfolio">
+            <div class="appgallery">
                 <div class= "app">
-                    <a target="_blank" href="#animation">
-                        <img src="../images/button/animation.png" alt="Halfpenny">
+                    <a target="_self" href="#animation">
+                        <img src="../images/button/animation.png" alt="animation">
+                        <div class= "application">ANIM</div>
                     </a>
-                    <div class= "application">Animation
-                    </div>
                 </div>
     
                 <div class= "app">
-                    <a target="_blank" href="#idm">
-                        <img src="../images/button/idm.png" alt="Halfpenny">
+                    <a target="_self" href="#idm">
+                        <img src="../images/button/idm.png" alt="idm">
+                        <div class= "application">IDM</div>
                     </a>
-                    <div class= "application">IDM</div>
                 </div>
     
                 <div class= "app">
-                    <a target="_blank" href="#photography">
-                        <img src="../images/button/photography.png" alt="Halfpenny">
+                    <a target="_self" href="#photography">
+                        <img src="../images/button/photography.png" alt="photography">
+                        <div class= "application">PHOTO</div>
                     </a>
-                    <div class= "application">Photography</div>
                 </div>
             </div>
         </div>
         <div class="gradient"></div>
     </main>
 <!-- Animation Gallery -->
-    <div class="ANIM">
-        <h2 class="title"><a id="animation">Animation</a></h2>
+    <div>
+        <h2 class="title"><a id="animation"></a>Animation</h2>
         <div>
-            <div class="gallerycenter">
-                <div class= "gallery">
-                    <a target="_blank" href="../portfolio/animation/halfpenny.html">
-                        <img src="../images/thumbnails/animation/halfpenny.jpg" alt="Halfpenny">
-                    </a>
-                    <div class= "featdescription"><a target="_blank" href="../portfolio/animation/halfpenny.html">Halfpenny Management Virtual Setting</a></div>
-                    <div class= "date">August 2019</div>
-                </div>
-    
-                <div class= "gallery">
-                    <a target="_blank" href="../portfolio/animation/aussomeaustin.html">
-                        <img src="../images/thumbnails/animation/aussome.jpg" alt="AussomeAustin">
-                    </a>
-                    <div class= "featdescription"><a target="_blank" href="../portfolio/animation/aussomeaustin.html">AussomeAustin Motion Graphic</a></div>
-                    <div class= "date">December 2019</div>
-                </div>
-    
-                <div class= "gallery">
-                    <a target="_blank" href="../portfolio/animation/pendeconstruction.html">
-                        <img src="../images/thumbnails/animation/pen.jpg" alt="pen">
-                    </a>
-                    <div class= "featdescription"><a target="_blank" href="../portfolio/animation/pendeconstruction.html">Pen Deconstruction</a></div>
-                    <div class= "date">May 2019</div>
-                </div>
-    
-                <div class= "gallery">
-                    <a target="_blank" href="../portfolio/animation/sunny.html">
-                        <img src="../images/thumbnails/animation/sunny.jpg" alt="Always Sunny">
-                    </a>
-                    <div class= "featdescription"><a target="_blank" href="../portfolio/animation/sunny.html">AlwaysSunny</a></div>
-                    <div class= "date">May 2019</div>
-                </div>
-              
-            </div>    
-        </div>
-    </div>
-<!-- IDM Gallery -->
-    <div class="gradient"></div>
-    <div class="IDM">
-        <h2><a id="idm"></a>Interactive Digital Media</h2>
-        <div>
-            <div class="gallerycenter">
-                <div class= "gallery">
-                    <a target="_blank" href="../portfolio/idm/spotifyredesign.html">
-                        <img src="../images/thumbnails/idm/spotify.jpg" alt="Spotify Redesign">
-                    </a>
-                    <div class= "featdescription"><a target="_blank" href="../portfolio/idm/spotifyredesign.html">Spotify Redesign Concept</a></div>
-                    <div class= "date">January 4th 2000</div>
-                </div>
+            <div>
+                <div class="gallerycenter">
+                    <div class= "gallery">
+                        <a target="_self" href="../portfolio/animation/sunny.html">
+                        <img src="../images/thumbnails/animation/sunny.jpg" alt="Sunny Recreation">
+                        <div class= "featdescription">It's Always Sunny Recreation</div>
+                        <div class= "date">December 2019</div>
+                        </a>
+                    </div>
+        
+                       <div class= "gallery">
+                        <a target="_self" href="../portfolio/animation/halfpenny.html">
+                        <img src="../images/thumbnails/animation/halfpenny.jpg" alt="halfpenny">
+                        <div class= "featdescription">Halfpenny Management Virtual Setting</div>
+                        <div class= "date">August 2019</div>
+                        </a>
+                    </div>
 
+                    <div class= "gallery">
+                        <a target="_self" href="../portfolio/animation/pendeconstruction.html">
+                        <img src="../images/thumbnails/animation/pen.jpg" alt="pen deconstruction">
+                        <div class= "featdescription">BallPen</div>
+                        <div class= "date">April 2019</div>
+                        </a>
+                    </div>
+        
+                       <div class= "gallery">
+                        <a target="_self" href="../portfolio/animation/aussomeaustin.html">
+                        <img src="../images/thumbnails/animation/aussome.jpg" alt="aussomeaustin">
+                        <div class= "featdescription">AussomeAustin Redesign</div>
+                        <div class= "date">November 2018</div>
+                        </a>
+                    </div>
+                </div>    
+            </div>
+        </div>
+<!-- IDM Gallery -->
+    <div>
+        <h2 class="title"><a id="idm"></a>Interactive Digital Media</h2>
+        <div>
+            <div class="gallerycenter">
                 <div class= "gallery">
-                    <a target="_blank" href="../portfolio/portfoliogallery.html">
-                        <img src="../images/thumbnails/idm/halfpennyweb.jpg" alt="Halfpenny">
+                    <a target="_self" href="../portfolio/idm/spotifyredesign.html">
+                    <img src="../images/thumbnails/idm/spotify.jpg" alt="Spotify Redesign">
+                    <div class= "featdescription">Spotify Redesign Concept</div>
+                    <div class= "date">December 2020</div>
                     </a>
-                    <div class= "featdescription"><a target="_blank" href="../portfolio/animation/aussomeaustin.html">Halpenny Management Wix Site</a></div>
-                    <div class= "date">January 4th 2000</div>
                 </div>
     
-                <div class= "gallery">
-                    <a target="_blank" href="../portfolio/portfoliogallery.html">
-                        <img src="../images/thumbnails/idm/tylenol.jpg" alt="tylenol">
+                   <div class= "gallery">
+                    <a target="_self" href="../portfolio/idm/tylenol.html">
+                    <img src="../images/thumbnails/idm/tylenol.jpg" alt="tylenol">
+                    <div class= "featdescription">Tylenol.com Redesign</div>
+                    <div class= "date">December 2020</div>
                     </a>
-                    <div class= "featdescription"><a target="_blank" href="../portfolio/animation/aussomeaustin.html">IDM211 Final: Tylenol.com</a></div>
-                    <div class= "date">January 4th 2000</div>
-                </div>
-    
-                <div class= "gallery">
-                    <a target="_blank" href="../portfolio/portfoliogallery.html">
-                        <img src="../images/thumbnails/idm/scopepie.jpg" alt="Scopepie">
-                    </a>
-                    <div class= "featdescription"><a target="_blank" href="../portfolio/animation/aussomeaustin.html">IDM100 Final: Scopepie.com</a></div>
-                    <div class= "date">January 4th 2000</div>
                 </div>
             </div>    
         </div>
     </div>
 <!-- Photography Gallery -->
-    <div class="gradient"></div>
-    <div class="PHOTO">
-        <h2><a id="photography"></a>Photography</h2>
+    <div>
+        <h2 class="title"><a id="photography"></a>Photography</h2>
         <div>
             <div class="gallerycenter">
                 <div class= "gallery">
-                    <a target="_blank" href="../portfolio/photography/prison.html">
-                        <img src="../images/thumbnails/photography/prison.jpg" alt="Halfpenny">
+                    <a target="_self" href="../portfolio/photography/philadelphia.html">
+                    <img src="../images/thumbnails/photography/city.jpg" alt="Spotify Redesign">
+                    <div class= "featdescription">Streets of Philadelphia</div>
+                    <div class= "date">Ocotber 2019</div>
                     </a>
-                    <div class= "featdescription"><a target="_blank" href="../portfolio/photography/prison.html">Prison for a Day</a></div>
-                    <div class= "date">January 4th 2000</div>
                 </div>
-    
-                <div class= "gallery">
-                    <a target="_blank" href="../portfolio/photography/philadelphia.html">
-                        <img src="../images/thumbnails/photography/city.jpg" alt="Philadelphia">
+
+               <div class= "gallery">
+                    <a target="_self" href="../portfolio/photography/prison.html">
+                    <img src="../images/thumbnails/photography/prison.jpg" alt="tylenol">
+                    <div class= "featdescription">Prison for A Day</div>
+                    <div class= "date">Novemebr 2018</div>
                     </a>
-                    <div class= "featdescription"><a target="_blank" href="../portfolio/photography/philadelphia.html">Streets of Philadelphia</a></div>
-                    <div class= "date">January 4th 2000</div>
                 </div>
-    
-                <div class= "gallery">
-                    <a target="_blank" href="../portfolio/portfoliogallery.html">
-                        <img src="../images/thumbnails/photography/highschool.jpg" alt="Halfpenny">
-                    </a>
-                    <div class= "featdescription"><a target="_blank" href="../portfolio/animation/aussomeaustin.html">High School Never Ends</a></div>
-                    <div class= "date">January 4th 2000</div>
-                </div>
-    
-                <div class= "gallery">
-                    <a target="_blank" href="../portfolio/portfoliogallery.html">
-                        <img src="../images/thumbnails/photography/investigator.jpg" alt="Halfpenny">
-                    </a>
-                    <div class= "featdescription"><a target="_blank" href="../portfolio/animation/aussomeaustin.html">Cinematography Lighting Shots</a></div>
-                    <div class= "date">January 4th 2000</div>
-                </div>
-            </div>    
-        </div>
+            </div>
+        </div>    
     </div>
+</div>
+    <!-- Return to Top -->
+    
+    <div class="return">
+        <a href="portfoliogallery.html">
+        <img src="../images/button/up.png" alt="up">
+        <h2 class="title">Return to The Top</h2>
+        </a>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class = "socialmedia">
+            <a href="https://500px.com/p/ausmullin?view=photos"><img src="../images/socialmedia/500px.png" alt="500px"></a>
+            <a href="https://www.linkedin.com/in/austinmullin/"><img src="../images/socialmedia/linkedin.png" alt="linkedin"></a>
+            <a href="https://medium.com/@ausmullin"><img  src="../images/socialmedia/medium.png" alt="medium"></a>
+        </div>
+    </footer>
 
 </body>
     

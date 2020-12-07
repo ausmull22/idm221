@@ -2,15 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>iFrame Test</title>
-    <style>
-        body {
-            background-color: #3BCEAC;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streets of Philadelphia - austinMULLIN</title>
     <link rel="stylesheet" href="../../styles/normalize.css" />
     <link rel="stylesheet" href="../../styles/styles.css" />
     <link rel="stylesheet" href="../../styles/portfoliopage.css" />
+    <link rel="stylesheet" href="../../styles/dropdown.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
@@ -18,32 +16,46 @@
 <body>
     <!-- Navigation System -->
     <header>
-        <!-- Navigation System -->
-        <div class="container">
-            <div>
-                <img id = "logo" src="../../images/logos/logowhite.png" alt="Austin Mullin" title="Yup, that's my name."/>
+        <div class="topnav">
+            <a href="../../index.html" class="active"><img id = "logo" src="../../images/logos/logowhite.png" alt="Austin Mullin"/></a>
+
+            <div id="myLinks">
+                <a href="../../index.html">Home</a>
+                <a href="../../portfolio/portfoliogallery.html">Portfolio</a>
+                <a href="../../about/aboutme.html">About Me</a>
+                <a href="../../about/resume.html">Resume</a>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="../../index.html">Home</a></li>
-                    <li><a href="../../portfolio/portfoliogallery.html">Portfolio</a></li>
-                    <li><a href="../../about/aboutme.html">About Me</a></li>
-                    <li><a href="../../about/resume.html">Resume</a></li>
-                </ul>
-            </nav>
+                    
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <script>
+                function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+                }
+                </script>
         </div>
     </header>
-<!-- Page Category -->
-    <div class="animation">
+<!-- Title of the Post -->
+    <div class="category">
+        <a target="_self" href="../portfoliogallery.html#photography">
         <img src="../../images/button/photography.png" alt="Photography">
         <p>Photography</p>
+        </a>
     </div>
-<!-- Title of the Post -->
+
     <div class="title">
-        <h1>Philadelphia</h1>
-        <h3>10/12/2020</h3>
+        <h1>Streets of Philadelphia</h1>
+        <h3>November 2019</h3>
     </div>
 <!-- The Media (iFrame) -->
+
 <div class="border">
     <div class="w3-content w3-display-container">
 
@@ -75,12 +87,11 @@
           </div>
         </div>
         
-        
         <div class="gallerybuttons">
             <button class="leftbutton" onclick="plusDivs(-1)">&#10094;</button>
             <button class="rightbutton" onclick="plusDivs(1)">&#10095;</button>
         </div>
-        
+    </div>
 </div>
 
 <!-- Script Used to Develop Breakdown/Gallery -->
@@ -107,12 +118,12 @@
 
 <!-- Description -->
     <div class="piecedescription">
-        <p>Streaming services have taken over the world... but not every platform got the same chance of success. From Blockbuster to AppleTV+, these are services that failed to deliver.</p>
+        <p>Walked around the Sckuyll and shot some photos for Creative Concept Design</p>
     </div>
 
 <!-- Cameras Used -->
     <div class="applicationsused">
-        <h1>Cameras Description</h1>
+        <h1>Cameras Used</h1>
         <div class="appgallery">
             <div class= "app">
                 <a target="_blank" href="/portfolio/portfoliogallery.html">
@@ -121,15 +132,14 @@
                 <div class= "application">Canon Digital Rebel XTi</div>
             </div>
     
-            <div class= "app">
-                <a target="_blank" href="/portfolio/portfoliogallery.html">
-                    <img src="../../images/apps/iphone.png" alt="Halfpenny">
-                </a>
-                <div class= "application">iPhone 8 Plus (Photo 4)</div>
-            </div>
-    
         </div>
     </div>
-<!-- Breakdown/Gallery -->
-   
+
+    <footer>
+        <div class = "socialmedia">
+            <a href="https://500px.com/p/ausmullin?view=photos"><img src="../../images/socialmedia/500px.png" alt="500px"></a>
+            <a href="https://www.linkedin.com/in/austinmullin/"><img src="../../images/socialmedia/linkedin.png" alt="linkedin"></a>
+            <a href="https://medium.com/@ausmullin"><img  src="../../images/socialmedia/medium.png" alt="medium"></a>
+        </div>
+    </footer>
 </body>
