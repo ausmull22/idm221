@@ -67,6 +67,7 @@ iframe {
 #adobexd iframe {
     position: relative;
     width: 100%;
+    border: 0ch;
 }
 
 /* iFrame for projects for video projects */
@@ -83,7 +84,6 @@ iframe {
 
 .piecedescription p {
     color:black;
-    font-family: RalewayRegular;
     text-align: left;
 }
 
@@ -98,7 +98,7 @@ iframe {
 .applicationsused h1 {
     color: black;
     display: block;
-    font-family: RalewayThin;
+    font-family: Raleway;
     font-size: 2.25rem;
     margin: 0 auto;
     object-fit: fill;
@@ -109,9 +109,7 @@ iframe {
 
 .appgallery {
     clear: both;
-    display: grid;
-    grid-auto-rows: minmax(10px, auto);
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     margin: 0 auto;
     overflow: auto;
     text-align: center;
@@ -132,6 +130,7 @@ iframe {
 }
 
 .application {
+    color: black;
     font-size: 1.2rem;
 }
 
@@ -183,11 +182,6 @@ div.app img {
     padding: 10px;
     text-align: center;
     
-}
-
-.application {
-    color: black;
-    font-family: RalewayRegular;
 }
 
 video {
@@ -293,7 +287,6 @@ h1.portfolio {
 
 h2 {
     display: block;
-    font-family: RalewayThin;
     font-size: 30px;
     margin: 10px;
     padding: 10px 0;

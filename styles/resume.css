@@ -41,24 +41,52 @@ li.skills {
     width: 2rem
 }
 
+/* //.....................................................................................................................
+//.EEEEEEEEEE..XXX....XXX..PPPPPPPP....EEEEEEEEEE..RRRRRRRRR....III..EEEEEEEEEE..NNN.....NNN......CCCC.....EEEEEEEEEE..
+//.EEEEEEEEEE..XXX....XXX..PPPPPPPPP...EEEEEEEEEE..RRRRRRRRRR...III..EEEEEEEEEE..NNNN....NNN....CCCCCCCC...EEEEEEEEEE..
+//.EEEEEEEEEE...XXX..XXX...PPPPPPPPPP..EEEEEEEEEE..RRRRRRRRRRR..III..EEEEEEEEEE..NNNNN...NNN...CCCCCCCCC...EEEEEEEEEE..
+//.EEE...........XX..XX....PPP....PPP..EEE.........RRR.....RRR..III..EEE.........NNNNN...NNN...CCC...CCCC..EEE.........
+//.EEE...........XXXXXX....PPP....PPP..EEE.........RRR.....RRR..III..EEE.........NNNNNN..NNN..CCC.....CC...EEE.........
+//.EEEEEEEEEE.....XXXX.....PPPPPPPPPP..EEEEEEEEEE..RRRRRRRRRRR..III..EEEEEEEEEE..NNN.NN..NNN..CCC..........EEEEEEEEEE..
+//.EEEEEEEEEE.....XXXX.....PPPPPPPPP...EEEEEEEEEE..RRRRRRRRRR...III..EEEEEEEEEE..NNN.NNN.NNN..CCC..........EEEEEEEEEE..
+//.EEEEEEEEEE.....XXXX.....PPPPPPPP....EEEEEEEEEE..RRRRRRRR.....III..EEEEEEEEEE..NNN..NN.NNN..CCC..........EEEEEEEEEE..
+//.EEE...........XXXXXX....PPP.........EEE.........RRR..RRRR....III..EEE.........NNN..NNNNNN..CCC.....CC...EEE.........
+//.EEE...........XX..XX....PPP.........EEE.........RRR...RRRR...III..EEE.........NNN...NNNNN...CCC...CCCC..EEE.........
+//.EEEEEEEEEE...XXX..XXX...PPP.........EEEEEEEEEE..RRR....RRR...III..EEEEEEEEEE..NNN...NNNNN...CCCCCCCCC...EEEEEEEEEE..
+//.EEEEEEEEEE..XXX....XXX..PPP.........EEEEEEEEEE..RRR....RRRR..III..EEEEEEEEEE..NNN....NNNN....CCCCCCCC...EEEEEEEEEE..
+//.EEEEEEEEEE..XXX....XXX..PPP.........EEEEEEEEEE..RRR.....RRRR.III..EEEEEEEEEE..NNN.....NNN......CCCC.....EEEEEEEEEE..
+//..................................................................................................................... */
+
 .experiencetitle h2 {
     color: black;
     font-family: RalewayExtraBold;
     font-size: 2rem;
-    padding: 0 3rem;
+    margin: 0.7rem 0;
     position: relative;
-    text-align: left;
-}
+    padding: 0 2rem;
+    text-align: left;}
 
 .experiencetitle h3 {
     color: black;
-    font-family: RalewayRegular;
-    padding: 0 3rem;
+    font-family: Cabin;
+    margin: 0.7rem 0;
+    padding: 0 2rem;
     text-align: left;
 }
 
+.experiencetitle h4 {
+    color: black;
+    font-family: Cabin;
+    margin: 0.7rem 0;
+    padding: 0 2rem;
+    font-size: 1.25rem;
+    text-align: left;
+}
+
+/* Bulleted List */
+
 .experiencetitle ul {
-    padding: 3rem;
+    padding: 1rem 3rem;
 }
 
 .experiencetitle ul li {
@@ -83,7 +111,7 @@ li.skills {
 h1.resumetop {
     color: black;
     display: block;
-    font-family: RalewayExtraBold;
+    font-family: RalewaySemiBold;
     font-size: 2.5rem;
     margin: 0 auto;
     object-fit: fill;
@@ -122,7 +150,9 @@ div.resumesection h3 {
 }
 
 .section p {
+    margin: -15px;
     font-size: 1.3rem;
+    line-height: 1;
 }
 
 
@@ -155,7 +185,7 @@ div.resumesection h3 {
     clear: both;
     display: grid;
     grid-auto-rows: minmax(15px, auto);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     margin: 0 auto;
     overflow: hidden;
     text-align: center;
@@ -175,5 +205,37 @@ div.app {
 }
 
 div.app img {
-    max-width: 70px;
+    max-width: 80px;
 }
+
+
+
+/* Category Tags */
+
+.category {
+    position: relative;
+    margin: 15px;
+    text-align: left;
+}
+
+.category a {
+    color: black;
+    text-decoration: none;
+}
+
+.category img {
+    margin: 0 auto;
+    padding: 10px 0;
+    vertical-align: middle;
+    width: 20%;
+}
+
+.category p {
+    bottom: -0.3rem;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px 0;
+    position: relative;
+    text-align: center;
+}
+

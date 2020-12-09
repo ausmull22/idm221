@@ -22,8 +22,8 @@ header {
 
 
 .centered {
-    font-family: RalewayExtraBold;
-    font-size: 3.30rem;
+    font-family: RalewaySemiBold;
+    font-size: 2.4rem;
     left: 50%;
     position: absolute;
     top: 50%;
@@ -63,13 +63,10 @@ hr.dashed {
     src: url("../fonts/Raleway-Regular.ttf") format("truetype");
 }
 
-
-
 @font-face {
     font-family: "RalewaySemiBold";
     src: url("../fonts/Raleway-SemiBold.ttf") format("truetype");
 }
-
 
 @font-face {
     font-family: "RalewayThin";
@@ -77,10 +74,19 @@ hr.dashed {
 }
 
 @font-face {
+    font-family: "RalewayLight";
+    src: url("../fonts/Raleway-Light.ttf") format("truetype");
+}
+
+@font-face {
     font-family: "RalewayExtraBold";
     src: url("../fonts/Raleway-ExtraBold.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "Cabin";
+    src: url("../fonts/Cabin-Regular.ttf") format("truetype");
+}
 
 
 /*! Logo */
@@ -160,15 +166,15 @@ h2 {
 
 
 body {
-    font-family: 'Arial', serif;
+    font-family: Cabin;
 }
 
 /*! Paragraphs */
 
 
 p {
-    font-family: RalewayRegular;
-    font-size: 1.6rem;
+    font-family: Cabin;
+    font-size: 1.4rem;
     line-height: 1.75;
     padding: 2rem;
     text-align: left;
@@ -262,14 +268,14 @@ button {
 .who h1 {
     color: black;
     display: block;
-    font-family: RalewayExtraBold;
+    font-family: RalewaySemiBold;
     margin: 0 auto;
     object-fit: fill;
     padding: 20px;
     position: relative;
     text-align: center;
     text-transform: uppercase;
-    top: -1.75rem;
+    top: -.75rem;
 }
 
 img.portrait {
@@ -312,7 +318,7 @@ div.group {
 
 .stripes {
     background-color: black;
-    margin: 2rem 0;
+    margin: 1rem 0;
     padding: 2px;
 }
 
