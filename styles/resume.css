@@ -152,7 +152,7 @@ div.resumesection h3 {
 .section p {
     margin: -15px;
     font-size: 1.3rem;
-    line-height: 1;
+    line-height: 2;
 }
 
 
@@ -184,10 +184,9 @@ div.resumesection h3 {
 .appgallery {
     clear: both;
     display: grid;
-    grid-auto-rows: minmax(15px, auto);
+    grid-auto-rows: minmax(10px, auto);
     grid-template-columns: repeat(2, 1fr);
     margin: 0 auto;
-    overflow: hidden;
     text-align: center;
 }
 
